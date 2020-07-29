@@ -1,0 +1,4 @@
+#向 ads_apl_uca 表中导入数据
+type=command
+dependencies=dws_apl_usr_uca
+command=spark-submit --master yarn --deploy-mode cluster --class cn.edu.neu.titan.titanSpark.analysis.apl.function.UCACountFunction /BigData/jars/titanSpark-1.0-SNAPSHOT.jar

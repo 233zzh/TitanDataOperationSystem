@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="scala-sdk-2.12.11" type="Scala">
+    <properties>
+      <compiler-classpath>
+        <root url="file://D:/ProgramFiles/scala/lib/scala-compiler.jar" />
+        <root url="file://D:/ProgramFiles/scala/lib/scala-library.jar" />
+        <root url="file://D:/ProgramFiles/scala/lib/scala-reflect.jar" />
+      </compiler-classpath>
+    </properties>
+    <CLASSES>
+      <root url="jar://D:/ProgramFiles/scala/lib/scala-library.jar!/" />
+      <root url="jar://D:/ProgramFiles/scala/lib/scala-parser-combinators_2.12-1.0.7.jar!/" />
+      <root url="jar://D:/ProgramFiles/scala/lib/scala-reflect.jar!/" />
+      <root url="jar://D:/ProgramFiles/scala/lib/scala-swing_2.12-2.0.3.jar!/" />
+      <root url="jar://D:/ProgramFiles/scala/lib/scala-xml_2.12-1.0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/ProgramFiles/scala/api/jars/scala-library-2.12.11-javadoc.jar!/" />
+      <root url="jar://D:/ProgramFiles/scala/api/jars/scala-parser-combinators_2.12-1.0.7-javadoc.jar!/" />
+      <root url="jar://D:/ProgramFiles/scala/api/jars/scala-reflect-2.12.11-javadoc.jar!/" />
+      <root url="jar://D:/ProgramFiles/scala/api/jars/scala-swing_2.12-2.0.3-javadoc.jar!/" />
+      <root url="jar://D:/ProgramFiles/scala/api/jars/scala-xml_2.12-1.0.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

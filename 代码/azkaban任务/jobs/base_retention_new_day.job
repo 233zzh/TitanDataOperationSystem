@@ -1,0 +1,4 @@
+#向 base_retention_new_week 表中导入数据
+type=command
+dependencies=ads_apl_dnrt_rec
+command=spark-submit --master yarn --deploy-mode cluster --class cn.edu.neu.titan.titanSpark.migration.retention.function.InstallationDayRetentionFunction /BigData/jars/titanSpark-1.0-SNAPSHOT.jar

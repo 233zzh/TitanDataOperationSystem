@@ -1,0 +1,3 @@
+type=command
+dependencies=dwd_base_event_log
+command=spark-submit --master yarn --deploy-mode cluster --class cn.edu.neu.titan.titanSpark.analysis.base.function.JSONParseFunction /BigData/jars/titanSpark-1.0-SNAPSHOT.jar

@@ -1,0 +1,154 @@
+// 
+// table 
+// 
+.table thead th,
+.table tfoot th,
+.table th {
+    font-weight: $font-weight-medium;
+}
+
+// 
+// Datatable
+// 
+.page-link {
+    color: $info;
+}
+
+.table.dataTable {
+	border-collapse: collapse !important;
+}
+
+.dataTables_wrapper {
+	padding: 0px;
+}
+
+// 
+// Editor
+// 
+.note-editor.note-frame,
+.dropzone {
+	border-color: $border-color;
+}
+
+.note-toolbar {
+    z-index: 1;
+}
+
+.note-toolbar-wrapper {
+    height: 33px !important;
+}
+
+.dropzone {
+	border-style: dotted;
+}
+
+// 
+// Footable
+// 
+#demo-foo-accordion .open > .dropdown-menu,
+#demo-foo-accordion2 .open > .dropdown-menu, 
+#footable-addrow .open > .dropdown-menu {
+    display: block;
+}
+
+table.footable{
+    thead{
+        tr.footable-filtering{
+            th{
+                ul.dropdown-menu{
+                    li{
+                        a.checkbox{
+                        	padding-left: 0;
+                        }
+                        a.checkbox input[type=checkbox]{
+                            position: relative;
+                            margin-right: 10px;
+                            margin-left: -20px;
+                            left: 0;
+                            opacity: 1;
+                        }
+                        .checkbox label::before{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.footable .pagination{
+    li{
+        a {
+            position: relative;
+            margin-left: -1px;
+            border: 1px solid $border-color;
+            color: $info;
+            background-color: $white;
+        	padding: .5rem .75rem;
+            display: block;
+            line-height: 1.25;
+        }
+        &.active a{
+            z-index: 2;
+            border-color: $info;
+            color: $white;
+            background-color: $info;
+        }
+    }
+    li.disabled {
+        a {
+        	border-color: $gray-100;
+            color: $gray-200;
+            background-color: $white;
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+    }
+    li:first-child {
+        a {
+        	border-radius: .25rem 0 0 .25rem;
+        	margin-left: 0;
+        }
+    }
+}
+
+// 
+// Jsgrid table
+// 
+
+.jsgrid-pager-page a,
+.jsgrid-pager-current-page,
+.jsgrid-pager-nav-button a {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 1.5em;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: #67757c;
+    border: 1px solid #ddd;
+}
+
+.jsgrid-pager-page a:hover,
+.jsgrid-pager-nav-button a:hover {
+    background-color: $themecolor;
+    color: $white;
+}
+
+.jsgrid-pager-current-page {
+    background-color: $themecolor;
+    color: $white;
+}
+
+.jsgrid-pager-page,
+.jsgrid-pager-nav-button {
+    padding: 0;
+}
+
+.jsgrid-pager-page.jsgrid-pager-current-page {
+    padding: 0.5em 1em !important;
+}

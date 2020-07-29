@@ -1,0 +1,62 @@
+{
+  "_args": [
+    [
+      "@claviska/jquery-minicolors@2.2.6",
+      "E:\\bitbucket\\bootstrap\\monster-getstarted\\monster"
+    ]
+  ],
+  "_from": "@claviska/jquery-minicolors@2.2.6",
+  "_id": "@claviska/jquery-minicolors@2.2.6",
+  "_inBundle": false,
+  "_integrity": "sha1-ALTB5OMeTaSDUBeF1cLtP8z97ck=",
+  "_location": "/@claviska/jquery-minicolors",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@claviska/jquery-minicolors@2.2.6",
+    "name": "@claviska/jquery-minicolors",
+    "escapedName": "@claviska%2fjquery-minicolors",
+    "scope": "@claviska",
+    "rawSpec": "2.2.6",
+    "saveSpec": null,
+    "fetchSpec": "2.2.6"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@claviska/jquery-minicolors/-/jquery-minicolors-2.2.6.tgz",
+  "_spec": "2.2.6",
+  "_where": "E:\\bitbucket\\bootstrap\\monster-getstarted\\monster",
+  "author": {
+    "name": "Cory LaViska"
+  },
+  "bugs": {
+    "url": "https://github.com/claviska/jquery-minicolors/issues"
+  },
+  "dependencies": {
+    "jquery": ">= 1.7.x"
+  },
+  "description": "jQuery MiniColors Plugin",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-help": "^1.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3"
+  },
+  "homepage": "https://github.com/claviska/jquery-minicolors",
+  "keywords": [
+    "jquery",
+    "colorpicker"
+  ],
+  "license": "MIT",
+  "main": "jquery.minicolors.js",
+  "name": "@claviska/jquery-minicolors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claviska/jquery-minicolors.git"
+  },
+  "scripts": {},
+  "version": "2.2.6"
+}

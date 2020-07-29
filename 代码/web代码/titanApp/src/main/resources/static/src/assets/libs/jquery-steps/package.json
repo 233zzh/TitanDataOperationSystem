@@ -1,0 +1,80 @@
+{
+  "_from": "jquery-steps@^1.1.0",
+  "_id": "jquery-steps@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-DO7gsNLkkUOYGtEg1FjtVuqOGSQ=",
+  "_location": "/jquery-steps",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "jquery-steps@^1.1.0",
+    "name": "jquery-steps",
+    "escapedName": "jquery-steps",
+    "rawSpec": "^1.1.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.1.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery-steps/-/jquery-steps-1.1.0.tgz",
+  "_shasum": "0ceee0b0d2e49143981ad120d458ed56ea8e1924",
+  "_spec": "jquery-steps@^1.1.0",
+  "_where": "E:\\bitbucket\\bootstrap\\elite-bt4\\dark",
+  "author": {
+    "name": "Rafael Staib",
+    "email": "me@rafaelstaib.com",
+    "url": "http://www.rafaelstaib.com"
+  },
+  "bugs": {
+    "url": "https://github.com/rstaib/jquery-steps/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A powerful jQuery wizard plugin that supports accessibility and HTML5",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-cli": "~0.1.9",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-compress": "~0.5.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-contrib-qunit": "~0.2.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-yuidoc": "~0.4.0",
+    "grunt-exec": "~0.4.2",
+    "grunt-regex-replace": "~0.2.5"
+  },
+  "folders": {
+    "dist": "build",
+    "src": "src",
+    "docs": "docs",
+    "nuget": "nuget"
+  },
+  "gitHead": "0d9f4f8b6a0c3d3b8a73eabf6a4b8cececd52f7a",
+  "homepage": "http://www.jquery-steps.com",
+  "keywords": [
+    "jQuery",
+    "Wizard",
+    "Tabs",
+    "Steps",
+    "Plugin"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "name": "jquery-steps",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rstaib/jquery-steps.git"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "title": "jQuery Steps",
+  "version": "1.1.0"
+}

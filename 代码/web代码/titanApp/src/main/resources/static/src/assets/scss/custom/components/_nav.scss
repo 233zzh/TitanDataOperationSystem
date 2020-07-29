@@ -1,0 +1,16 @@
+// 
+// Custom designed style
+// 
+
+.nav-pills.custom-pills {
+    .nav-link {
+        border-radius: 0;
+        opacity: 0.7;
+        &.active {
+        	color: $themecolor;
+        	background-color: transparent;
+        	border-bottom: 2px solid $themecolor;
+            opacity: 1; 
+        }
+    }
+}

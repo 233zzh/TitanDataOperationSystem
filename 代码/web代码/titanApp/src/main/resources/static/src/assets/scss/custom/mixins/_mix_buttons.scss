@@ -1,0 +1,71 @@
+// 
+// Circle Buttons
+// 
+@mixin circle_buttons($border-radius: null, $width: null, $height: null, $padding: null, $line-height: null, $font-size: null){
+	border-radius: $border-radius;
+	width: $width;
+	height: $height;
+	padding: $padding;
+	line-height: $line-height;
+	font-size: $font-size;
+}
+
+// 
+// Rounded Buttons
+// 
+@mixin rounded_buttons($border-radius: null, $font-size: null, $padding: null){
+	border-radius: $border-radius;
+	padding: $padding;
+	font-size: $font-size;
+}
+
+// 
+// Social Buttons
+// 
+
+$buttonNames: ('facebook', 'twitter', 'linkedin', 'dribbble', 'googleplus', 'instagram', 'pinterest', 'dropbox', 'flickr', 'tumblr', 'skype', 'youtube', 'github');
+$buttonColors: (#3b5998, #55acee, #007bb6, #ea4c89, #dd4b39, #3f729b, #cb2027, #007ee5, #ff0084, #32506d, #00aff0, #bb0000, #171515);
+
+@mixin socialButtons($class, $name, $color: #3b5998) {
+    .#{$class}-#{$name} {
+        background: $color;
+        color: $white;
+        &:hover {
+          background: darken($color,8%);
+          color: $white;
+        }
+        &:active {
+          background: darken($color,25%);
+          color: $white;
+        }
+    }
+}
+
+// loop over $buttonNames
+@each $buttonName in $buttonNames {
+  	// Find the current index of $buttonNames...
+  	$index: index($buttonNames, $buttonName);
+    // ... to pull the right value $buttonColors
+  	@include socialButtons('btn', $buttonName, nth($buttonColors, $index));
+}
+
+
+$buttons: (
+  'facebook': #3b5998,
+  'twitter': #55acee,
+  'linkedin':  #007bb6,
+  'dribbble': #ea4c89,
+  'googleplus': #dd4b39,
+  'instagram': #3f729b,
+  'pinterest': #cb2027,
+  'dropbox': #007ee5,
+  'flickr': #ff0084,
+  'tumblr': #32506d,
+  'skype': #00aff0,
+  'youtube': #bb0000,
+  'github': #171515
+);
+
+@each $buttonName, $color in $buttons  {
+    @include socialButtons('btn', $buttonName, $color)
+}

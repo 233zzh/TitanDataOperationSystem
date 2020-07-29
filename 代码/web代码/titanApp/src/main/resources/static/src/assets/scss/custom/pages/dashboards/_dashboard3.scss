@@ -1,0 +1,71 @@
+// 
+// common
+// 
+.campaign2{
+    position: relative;
+    .ct-series-a .ct-area {
+        fill-opacity:0.2;
+        fill: url(#gradient);
+    }
+    .ct-series-a .ct-line, .ct-series-a .ct-point{
+        stroke: $success;
+        stroke-width:2px;
+    }
+    .ct-series-b .ct-area{
+        fill: $info;
+        fill-opacity:0.1;
+        
+    }
+    .ct-series-b .ct-line, .ct-series-b .ct-point {
+        stroke: $info;
+        stroke-width:2px;
+    }
+    .ct-series-a .ct-point, .ct-series-b .ct-point{
+        stroke-width:6px;
+    }
+}
+
+.profile-card .profile-img {
+    max-height: 380px;
+}
+
+.profile-tab, .customtab {
+    li {
+        a.nav-link {
+            border: 0;
+            padding: 15px 20px;
+            color: $body-color;
+            font-size: 1rem;
+            &.active {
+                border-bottom: 2px solid $info;
+                color: $info;
+            }
+            &:hover {
+                color: $info;
+            }
+        }
+    }
+}
+
+// 
+// Vector Map
+// 
+#visitfromworld {
+    path.jvectormap-region.jvectormap-element {
+        stroke-width: 1px;
+        stroke: $text-muted;
+    }
+}
+.jvectormap-zoomin,
+.jvectormap-zoomout,
+.jvectormap-goback {
+    background: $text-muted;
+}
+
+.jvectormap-zoomin {
+    top: 10px;
+}
+
+.jvectormap-zoomout {
+    top: 40px;
+}

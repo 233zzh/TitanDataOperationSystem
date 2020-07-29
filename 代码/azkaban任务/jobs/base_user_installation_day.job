@@ -1,0 +1,4 @@
+#向 base_user_installation_day 表中导入数据
+type=command
+dependencies=ads_usr_dnu_cube
+command=spark-submit --master yarn --deploy-mode cluster --class cn.edu.neu.titan.titanSpark.migration.baseAnalysis.function.UserInstallFunction /BigData/jars/titanSpark-1.0-SNAPSHOT.jar

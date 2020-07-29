@@ -1,0 +1,70 @@
+{
+  "_from": "morris.js@^0.5.0",
+  "_id": "morris.js@0.5.0",
+  "_inBundle": false,
+  "_integrity": "sha1-cldnE1z64Fmq51mZuyzmocXRtEs=",
+  "_location": "/morris.js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "morris.js@^0.5.0",
+    "name": "morris.js",
+    "escapedName": "morris.js",
+    "rawSpec": "^0.5.0",
+    "saveSpec": null,
+    "fetchSpec": "^0.5.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/morris.js/-/morris.js-0.5.0.tgz",
+  "_shasum": "725767135cfae059aae75999bb2ce6a1c5d1b44b",
+  "_spec": "morris.js@^0.5.0",
+  "_where": "E:\\bitbucket\\bootstrap\\elite-bt4\\dark",
+  "author": {
+    "name": "Olly Smith",
+    "email": "olly@oesmith.co.uk"
+  },
+  "bugs": {
+    "url": "https://github.com/morrisjs/morris.js/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Easy, pretty charts",
+  "devDependencies": {
+    "bower": "~1.2.8",
+    "grunt": "~0.4.1",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-less": "~0.7.0",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-mocha": "~0.4.10",
+    "grunt-shell": "~0.5.0",
+    "matchdep": "~0.1.2"
+  },
+  "engines": {
+    "node": ">=0.8 <0.11"
+  },
+  "homepage": "http://morrisjs.github.com/morris.js",
+  "license": "BSD-2-Clause",
+  "name": "morris.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/morrisjs/morris.js.git"
+  },
+  "scripts": {
+    "test": "grunt concat coffee mocha"
+  },
+  "version": "0.5.0",
+  "warnings": [
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": ">=0.8 <0.11"
+      },
+      "pkgid": "morris.js@0.5.0"
+    }
+  ]
+}

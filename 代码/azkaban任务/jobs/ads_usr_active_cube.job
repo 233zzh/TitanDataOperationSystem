@@ -1,0 +1,4 @@
+#向 ads_usr_dau_cube、ads_usr_wau_cube、ads_usr_mau_cube 表中导入数据，这里虽然是三个表，但是具体的执行周期在实现方法中做了判断
+type=command
+dependencies=dws_apl_dau_rec
+command=spark-submit --master yarn --deploy-mode cluster --class cn.edu.neu.titan.titanSpark.migration.baseAnalysis.function.UserActiveFunction /BigData/jars/titanSpark-1.0-SNAPSHOT.jar

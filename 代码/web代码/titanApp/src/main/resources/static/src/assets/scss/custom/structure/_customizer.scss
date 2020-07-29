@@ -1,0 +1,86 @@
+// 
+// Customizer
+// 
+.customizer{
+    position: fixed;
+    top:0 ;
+    right: -280px;
+    width: 280px;
+    height: 100%;
+    background: $theme-light;
+    z-index: 100;
+    box-shadow: $shadow;
+    transition: 0.3s ease-in;
+    .service-panel-toggle{
+        position: absolute;
+        bottom: 27px;
+        left: -75px;
+        color: $white;
+        background: $cyan;
+        border-radius: 100%;
+        padding: 17px 20px;
+    }
+    &.show-service-panel{
+        position: fixed;
+        right: 0;
+        .service-panel-toggle{
+            border-radius: 30px 0 0 30px;
+            left: -54px;
+        }
+    } 
+    .customizer-body{
+        position: relative;
+        height: 100%;
+    }
+    .customizer-tab{
+        display: flex;
+        .nav-item {
+            width: 33.33%;
+            text-align: center;
+            .nav-link{
+                color: $body-color;
+                border-bottom: 3px solid transparent;
+                padding: 15px 12px;
+                &:hover, &.active{
+                    color: $themecolor;
+                    border-bottom: 3px solid $themecolor;
+                }
+            }
+        }
+    }
+}
+
+.custom-control-label::after, .custom-control-label::before{
+    top: 0.15rem;
+}
+
+
+// 
+// Theme Colors styling
+// 
+.theme-color{
+    .theme-item{
+        .theme-link{
+            width: 20px;
+            height: 20px;
+            &[data-logobg="skin1"], &[data-navbarbg="skin1"], &[data-sidebarbg="skin1"] {
+                background: $skin1;
+            }
+            &[data-logobg="skin2"], &[data-navbarbg="skin2"], &[data-sidebarbg="skin2"]{
+                background: $skin2;
+            }
+            &[data-logobg="skin3"], &[data-navbarbg="skin3"], &[data-sidebarbg="skin3"]{
+                background: $skin3;
+            }
+            &[data-logobg="skin4"], &[data-navbarbg="skin4"], &[data-sidebarbg="skin4"]{
+                background: $skin4;
+            }
+            &[data-logobg="skin5"], &[data-navbarbg="skin5"], &[data-sidebarbg="skin5"]{
+                background: $skin5;
+            }
+            &[data-logobg="skin6"], &[data-navbarbg="skin6"], &[data-sidebarbg="skin6"]{
+                background: $gray-200;
+            }
+        }
+    }
+}

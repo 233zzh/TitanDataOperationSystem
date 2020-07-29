@@ -1,0 +1,187 @@
+// 
+// Timeline Pages
+// 
+
+.timeline {
+    position: relative;
+    padding: 20px 0 20px;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    margin-left: -1.5px;
+    background-color: $gray-200;
+}
+
+.timeline>.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.timeline>.timeline-item:before,
+.timeline>.timeline-item:after {
+    content: " ";
+    display: table;
+}
+
+.timeline>.timeline-item:after {
+    clear: both;
+}
+
+.timeline>.timeline-item>.timeline-panel {
+    float: $lft;
+    position: relative;
+    width: 46%;
+    padding: 20px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.timeline>.timeline-item>.timeline-panel:before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 26px;
+    right: -8px;
+    border-top: 8px solid transparent;
+    border-right: 0 solid $border-color;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid $border-color;
+}
+
+.timeline>.timeline-item>.timeline-panel:after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 27px;
+    right: -7px;
+    border-top: 7px solid transparent;
+    border-right: 0 solid $white;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid $white;
+}
+
+.timeline>.timeline-item>.timeline-badge {
+    z-index: 10;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    border-radius: 50% 50% 50% 50%;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 50px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.timeline>.timeline-item.timeline-inverted>.timeline-panel {
+    float: $rgt;
+}
+
+.timeline>.timeline-item.timeline-inverted>.timeline-panel:before {
+    right: auto;
+    left: -8px;
+    border-right-width: 8px;
+    border-left-width: 0;
+}
+
+.timeline>.timeline-item.timeline-inverted>.timeline-panel:after {
+    right: auto;
+    left: -7px;
+    border-right-width: 7px;
+    border-left-width: 0;
+}
+
+.timeline-badge.primary {
+    background-color: $primary;
+}
+
+.timeline-badge.success {
+    background-color: $success;
+}
+
+.timeline-badge.warning {
+    background-color: $warning;
+}
+
+.timeline-badge.danger {
+    background-color: $danger;
+}
+
+.timeline-badge.info {
+    background-color: $info;
+}
+
+.timeline-title {
+    margin-top: 0;
+    color: inherit;
+    font-weight: 400;
+}
+
+.timeline-body>p,
+.timeline-body>ul {
+    margin-bottom: 0;
+}
+
+.timeline-left{
+    &:before {
+        left: 30px;
+    }
+    > .timeline-item > .timeline-badge{
+        left:30px;
+        top:9px;
+    }
+    > .timeline-item > .timeline-panel{
+        width: calc(100% - 80px);
+    }
+}
+.timeline-right{
+    &:before {
+        right: 30px;
+        left:auto;
+    }
+    > .timeline-item > .timeline-badge{
+        right:5px;
+        top:9px;
+        left:auto;
+    }
+    > .timeline-item > .timeline-panel{
+        width: calc(100% - 80px);
+    }
+}
+
+// 
+// Horizontal Timeline
+// 
+
+.cd-horizontal-timeline .events a {
+    padding-bottom: 6px;
+    color: $themecolor;
+}
+
+.cd-horizontal-timeline .filling-line,
+.cd-horizontal-timeline .events a.selected::after {
+    background: $themecolor;
+}
+
+.cd-horizontal-timeline .events a.selected::after {
+    border-color: $themecolor;
+}
+
+.cd-horizontal-timeline .m-t-40 {
+    margin-top: 40px!important;
+}

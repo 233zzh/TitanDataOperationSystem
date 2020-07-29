@@ -1,0 +1,61 @@
+import com.mysql.cj.jdbc.MysqlDataSource;
+import edu.neu.titan.titanApp.common.beans.Condition;
+import edu.neu.titan.titanApp.common.sql.SQLResultBuilder;
+import edu.neu.titan.titanApp.dao.sql.ChannelTemplate;
+import edu.neu.titan.titanApp.dao.sql.UserAnalyseTemplate;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+
+import java.util.List;
+
+/**
+ * Created by IntelliJ IDEA.
+ *
+ * @Author: Zhao Lei
+ * @Email: 1176066749@qq.com
+ * @Date: 2020/6/18
+ * @Time: 14:29
+ * @Version: 1.0
+ * @Description: 测试能否把查出来的小数转成Integer
+ */
+public class SelectTest {
+
+    private NamedParameterJdbcTemplate template;
+
+    public void test() {
+        MysqlDataSource dataSource = new MysqlDataSource();
+        dataSource.setURL("jdbc:mysql://localhost:3306/TiTan?serverTimezone=UTC");
+        dataSource.setUser("root");
+        dataSource.setPassword("123456");
+
+        NamedParameterJdbcTemplate template = new NamedParameterJdbcTemplate(dataSource);
+
+        /*List<Integer> list = SQLResultBuilder.newInstance(Integer.class)
+                .sql_select(ChannelTemplate.QUERY_INSTALLATION)
+                .build()
+                .getResult(template);
+
+        System.out.println(list);
+*/
+        Condition condition = new Condition();
+        condition.setStart_date("2020-06-15");
+        condition.setEnd_date("2020-06-16");
+        condition.setVersion_id(1);
+        condition.setChannel_id(1);
+
+        List<Integer> list=SQLResultBuilder.newInstance(Integer.class)
+                .sql_select(ChannelTemplate.QUERY_INSTALLATION)
+//                .sql_group(ChannelTemplate.GROUP_BY_CLAUSE)
+                .condition(condition)
+                .build()
+                .getResult(template);
+
+        System.out.println(list);
+//        JdbcTemplate template1 = new JdbcTemplate();
+
+    }
+
+    public static void main(String[] args) {
+        SelectTest selectTest = new SelectTest();
+        selectTest.test();
+    }
+}

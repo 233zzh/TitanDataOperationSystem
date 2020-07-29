@@ -1,0 +1,154 @@
+// 
+// Global style
+// 
+* {
+    outline: none;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    color: $body-color;
+    background: $body-bg;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+b,
+strong {
+    font-weight: $font-weight-medium; // Add the correct font weight in Chrome, Edge, and Safari
+}
+
+a {
+    color: $themecolor;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $info;
+    }
+
+    &.link {
+        color: $headings-color;
+
+        &:hover,
+        &:focus {
+            color: $themecolor;
+        }
+    }
+}
+
+// Opacity
+.op-5 {
+    opacity: 0.5;
+}
+
+// 
+// Fonts setting
+// 
+html body {
+    .font-weight-medium {
+        font-weight: $font-weight-medium;
+    }
+
+    .display-5 {
+        font-size: 3rem;
+    }
+    .display-6 {
+        font-size: 2.5rem;
+    }
+    .display-7 {
+        font-size: 2rem;
+    }
+}
+
+// 
+// List Style none
+// 
+ul.list-style-none {
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style: none;
+        a {
+            display: block;
+            padding: 8px 0;
+            color: $body-color;
+            text-decoration: none;
+            &:hover {
+                color: $themecolor;
+            }
+        }
+    }
+}
+
+// 
+// Rounds
+// 
+.round {
+    line-height: 45px;
+    width: 45px;
+    height: 45px;
+}
+
+.round-lg {
+    line-height: 65px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+}
+
+// 
+// List of icons
+// 
+ul.list-icons {
+    li {
+        a {
+            color: $body-color;
+            &:hover {
+                color: $info;
+            }
+        }
+        i {
+            font-size: 13px;
+        }
+    }
+}
+
+// Custom select
+.custom-select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    background-size: auto;
+}
+
+// 
+// Table
+// 
+.no-wrap {
+    td,
+    th {
+        white-space: nowrap;
+    }
+}
+
+.v-middle {
+    td,
+    th {
+        vertical-align: middle;
+    }
+}
+
+// 
+// Grids 
+.grid-structure .grid-container {
+    background-color: $light;
+    margin-bottom: 10px;
+    font-size: .8rem;
+    padding: 10px 20px;
+}
+

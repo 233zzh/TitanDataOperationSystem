@@ -1,0 +1,4 @@
+#向 base_user_active_day、 base_user_active_week、base_user_active_month 表中导入数据，这里虽然是三个表，但是具体的执行周期在实现方法中做了判断
+type=command
+dependencies=ads_usr_active_cube
+command=spark-submit --master yarn --deploy-mode cluster --class cn.edu.neu.titan.titanSpark.migration.baseAnalysis.function.UserActiveFunction /BigData/jars/titanSpark-1.0-SNAPSHOT.jar

@@ -1,0 +1,36 @@
+// 
+// Font size
+// 
+
+$fontSizes: ('10', '12', '14', '16', '18', '20', '22', '24');
+$fontSizeValues: (10px, 12px, 14px, 16px, 18px, 20px, 22px, 24px);
+
+@mixin fonts-size($class, $name, $fsize: 10px) {
+    .#{$class}-#{$name} {
+        font-size: $fsize;
+    }
+}
+
+// loop over $fontSizes
+@each $fontSize in $fontSizes {
+    // Find the current index of $fontSizes...
+    $index: index($fontSizes, $fontSize);
+    // ... to pull the right value $fontSizeValues
+    @include fonts-size('font', $fontSize, nth($fontSizeValues, $index));
+}
+
+
+$fonts: (
+  '10': 10px,
+  '12': 12px,
+  '14': 14px,
+  '16': 16px,
+  '18': 18px,
+  '20': 20px,
+  '22': 22px,
+  '24': 24px,
+);
+
+@each $fontSize, $fsize in $fonts  {
+    @include fonts-size('font', $fontSize, $fsize)
+}

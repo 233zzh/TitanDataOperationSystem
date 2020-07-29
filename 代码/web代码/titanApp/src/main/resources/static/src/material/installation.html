@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>Material pro admin Template - The Ultimate Multipurpose admin template</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/xtremeadmin/" />
+    <link href="../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link href="../../dist/js/pages/chartist/chartist-init.css" rel="stylesheet">
+    <link href="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link href="../assets/libs/c3/c3.min.css" rel="stylesheet">
+    <!--This page css    -->
+    <link rel="stylesheet" type="text/css" href="../assets/libs/daterangepicker/daterangepicker.css">
+    <link href="../assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="../assets/libs/datatables/media/css/jquery.dataTables.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../../dist/css/style.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+
+<body>
+<!-- ============================================================== -->
+<!-- Preloader - style you can find in spinners.css -->
+<!-- ============================================================== -->
+<div class="preloader">
+    <div class="lds-ripple">
+        <div class="lds-pos"></div>
+        <div class="lds-pos"></div>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Topbar header - style you can find in pages.scss -->
+    <!--============================================================== -->
+    <header class="topbar">
+        <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+            <div class="navbar-header">
+                <!-- This is for the sidebar toggle which is visible on mobile only -->
+                <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+                        class="ti-menu ti-close"></i></a>
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <a class="navbar-brand" href="index.html">
+                    <!-- Logo icon -->
+                    <b class="logo-icon">
+                        <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                        <!-- Dark Logo icon -->
+                        <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                        <!-- Light Logo icon -->
+                        <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                    </b>
+                    <!--End Logo icon -->
+                    <!-- Logo text -->
+                    <span class="logo-text">
+                            <!-- dark Logo text -->
+                            <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                        <!-- Light Logo text -->
+                            <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                        </span>
+                </a>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Toggle which is visible on mobile only -->
+                <!-- ============================================================== -->
+                <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+                   data-toggle="collapse" data-target="#navbarSupportedContent"
+                   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i
+                        class="ti-more"></i></a>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Logo -->
+            <!-- ============================================================== -->
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <!-- ============================================================== -->
+                <!-- toggle and nav items -->
+                <!-- ============================================================== -->
+                <ul class="navbar-nav mr-auto float-left">
+                    <!-- This is  -->
+                    <li class="nav-item"> <a
+                            class="nav-link sidebartoggler d-none d-md-block waves-effect waves-dark"
+                            href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                    </li>
+                    <!-- ============================================================== -->
+                    <!-- End Mega Menu -->
+                    <!-- ============================================================== -->
+                </ul>
+                <!-- ============================================================== -->
+                <!-- Right side toggle and nav items -->
+                <!-- ============================================================== -->
+            </div>
+        </nav>
+    </header>
+    <!-- ============================================================== -->
+    <!-- End Topbar header -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <aside class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar">
+            <!-- Sidebar navigation-->
+            <nav class="sidebar-nav">
+                <ul id="sidebarnav">
+                    <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)"
+                           aria-expanded="false">
+                            <i class="mdi mdi-chart-areaspline"></i>
+                            <span class="hide-menu">概况</span>
+                        </a>
+                        <ul aria-expanded="false" class="collapse  first-level">
+                            <li class="sidebar-item">
+                                <a href="trend_summary.html" class="sidebar-link">
+                                    <i class="mdi mdi-adjust"></i>
+                                    <span class="hide-menu">整体趋势</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark"
+                                                 href="javascript:void(0)" aria-expanded="false"><i
+                            class="mdi mdi-account"></i><span class="hide-menu">用户分析</span></a>
+                        <ul aria-expanded="false" class="collapse  first-level">
+                            <li class="sidebar-item"><a href="installation.html"
+                                                        class="sidebar-link"><i class="mdi mdi-format-align-left"></i><span
+                                    class="hide-menu">新增用户</span></a></li>
+                            <li class="sidebar-item"><a href="active_user.html"
+                                                        class="sidebar-link"><i class="mdi mdi-format-align-right"></i><span
+                                    class="hide-menu">活跃用户</span></a></li>
+                            <li class="sidebar-item"><a href="launch.html"
+                                                        class="sidebar-link"><i class="mdi mdi-format-float-left"></i><span
+                                    class="hide-menu">启动次数</span></a></li>
+                            <li class="sidebar-item"><a href="version.html"
+                                                        class="sidebar-link"><i class="mdi mdi-format-float-right"></i><span
+                                    class="hide-menu">版本分布</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark"
+                                                 href="javascript:void(0)" aria-expanded="false"><i
+                            class="fab fa-flipboard"></i><span class="hide-menu">留存分析</span></a>
+                        <ul aria-expanded="false" class="collapse  first-level">
+                            <li class="sidebar-item"><a href="retention.html" class="sidebar-link"><i
+                                    class="mdi mdi-email"></i><span class="hide-menu">留存用户</span></a></li>
+                            <li class="sidebar-item"><a href="freshness.html" class="sidebar-link"><i
+                                    class="mdi mdi-email-alert"></i><span class="hide-menu">用户新鲜度
+                                        </span></a></li>
+                            <li class="sidebar-item"><a href="engagement.html" class="sidebar-link"><i
+                                    class="mdi mdi-email-secure"></i><span class="hide-menu">用户活跃度
+                                        </span></a></li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark"
+                                                 href="javascript:void(0)" aria-expanded="false"><i
+                            class="mdi mdi-clipboard-arrow-down"></i><span class="hide-menu">渠道分析</span></a>
+                        <ul aria-expanded="false" class="collapse  first-level">
+                            <li class="sidebar-item"><a href="channels.html" class="sidebar-link"><i
+                                    class="mdi mdi-book-multiple"></i><span class="hide-menu">渠道列表
+                                        </span></a></li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark"
+                                                 href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-account-check"></i><span
+                            class="hide-menu">用户参与度</span></a>
+                        <ul aria-expanded="false" class="collapse first-level">
+                            <li class="sidebar-item"><a href="duration.html" class="sidebar-link"><i
+                                    class="mdi mdi-toggle-switch"></i><span class="hide-menu">
+                                            使用时长</span></a></li>
+                            <li class="sidebar-item"><a href="frequency.html" class="sidebar-link"><i
+                                    class="mdi mdi-tablet"></i><span class="hide-menu"> 使用频率</span></a></li>
+                            <li class="sidebar-item"><a href="page.html" class="sidebar-link"><i
+                                    class="mdi mdi-sort-variant"></i><span class="hide-menu">访问页面</span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="interval.html" class="sidebar-link"><i
+                                    class="mdi mdi-image-filter-vintage"></i><span class="hide-menu">访问间隔</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark"
+                                                 href="javascript:void(0)" aria-expanded="false"><i
+                            class="mdi mdi-vibrate"></i><span class="hide-menu">终端属性</span></a>
+                        <ul aria-expanded="false" class="collapse  first-level">
+                            <li class="sidebar-item"><a href="device.html" class="sidebar-link"><i
+                                    class="mdi mdi-layers"></i><span class="hide-menu">设备终端</span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="network.html" class="sidebar-link"><i
+                                    class="mdi mdi-credit-card-scan"></i><span class="hide-menu">网络</span></a></li>
+                            <li class="sidebar-item"><a href="region.html" class="sidebar-link"><i
+                                    class="mdi mdi-weather-fog"></i><span class="hide-menu">地域</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+    </aside>
+    <!-- ============================================================== -->
+    <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <div class="page-titles">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>新增用户分析</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control shawCalRanges" id="date-range">
+                        <div class="input-group-append">
+                            <span class="input-group-text">
+                                <span class="ti-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--注意：这里的选择项要后台加载-->
+                <div class="col-md-1">
+                    <select class="custom-select mr-sm-2" id="versionSelect">
+                    </select>
+                </div>
+                <div class="col-md-1">
+                    <select class="custom-select mr-sm-2" id="channelSelect">
+                    </select>
+                </div>
+                <div class="col-md-1">
+                    <button type="button" class="btn waves-effect waves-light btn-outline-info" id="btnGenerate" onclick="generateAll()">生成</button>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+            <!-- Row -->
+            <div class="row">
+                <!-- Column -->
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>新增趋势</h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="list-group list-group-horizontal" id="list-increaseTrend" role="tablist">
+                                        <a href="#" class="list-group-item list-group-item-action active" data-toggle="list" id="list-model-increaseTrend-increaseUser-list" data-controls="model">新增用户</a>
+                                    </div>
+                                </div>
+                                <div class="col-2 offset-9">
+                                    <div class="list-group list-group-horizontal" id="list-time" role="tablist">
+                                        <a href="#list-model-increaseTrend-day" class="list-group-item list-group-item-action active" data-toggle="list" id="list-model-day-list"
+                                           data-controls="model">天</a>
+                                        <a href="#list-model-increaseTrend-week" class="list-group-item list-group-item-action" data-toggle="list" id="list-model-week-list"
+                                           data-controls="model">周</a>
+                                        <a href="#list-model-increaseTrend-month" class="list-group-item list-group-item-action" data-toggle="list" id="list-model-month-list"
+                                           data-controls="model">月</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="tab-content" id="nav-increaseTrendTime">
+                                    <div class="tab-pane fade show active" id="list-model-increaseTrend-day" role="tabpanel" aria-labelledby="list-model-day-list">
+                                        <div id="model-increaseTrend-day"  style = "width: 1600px;height:400px;"></div>
+                                    </div>
+                                    <div class="tab-pane fade show" id="list-model-increaseTrend-week" role="tabpanel" aria-labelledby="list-model-week-list">
+                                        <div id="model-increaseTrend-week"  style = "width: 1600px;height:400px;"></div>
+                                    </div>
+                                    <div class="tab-pane fade show" id="list-model-increaseTrend-month" role="tabpanel" aria-labelledby="list-model-month-list">
+                                        <div id="model-increaseTrend-month"  style = "width: 1600px;height:400px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <a href="javascript:void(0)" id="show-detail-increaseTrend">展开明细数据</a>
+                                <a href="javascript:void(0)" id="hid-detail-increaseTrend" style="display: none">隐藏明细数据</a>
+                            </div>
+                            <div class="table-responsive" id="table-detail-increaseTrend" style="display: none;">
+                                <div id="table-day-container">
+                                    <table id="increase-trend-day" class="table table-striped table-bordered display">
+                                        <thead>
+                                        <tr>
+                                            <th>日期</th>
+                                            <th>新增用户（占比）</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="table-week-container" style="display: none">
+                                    <table id="increase-trend-week" class="table table-striped table-bordered" >
+                                        <thead>
+                                        <tr>
+                                            <th>日期</th>
+                                            <th>新增用户（占比）</th>
+                                        </tr>
+                                        <tr>
+                                            <td>日期</td>
+                                            <td>新增用户（占比）</td>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="table-month-container" style="display: none;">
+                                    <table id="increase-trend-month" class="table table-striped table-bordered" >
+                                        <thead>
+                                        <tr>
+                                            <th>日期</th>
+                                            <th>新增用户（占比）</th>
+                                        </tr>
+                                        <tr>
+                                            <td>日期</td>
+                                            <td>新增用户（占比）</td>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>新增用户质量</h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="list-group list-group-horizontal" id="list-increaseQuality" role="tablist">
+                                        <a href="#list-model-increaseUser" class="list-group-item list-group-item-action active" data-toggle="list" id="list-model-increaseQuality-increaseUser-list" data-controls="model">次日留存率</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="tab-content" id="nav-increaseQualityTime">
+                                    <div class="tab-pane fade show active" id="list-model-increaseQuality-increaseUser" role="tabpanel" aria-labelledby="list-model-increaseUser-list">
+                                        <div id="model-increaseQuality"  style = "width: 1600px;height:400px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <a href="javascript:void(0)" id="show-detail-increaseQuality">展开明细数据</a>
+                                <a href="javascript:void(0)" id="hid-detail-increaseQuality" style="display: none">隐藏明细数据</a>
+                            </div>
+                            <div class="table-responsive" id="table-detail-increaseQuality" style="display: none;">
+                                <table id="increase-quality" class="table table-striped table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th>日期</th>
+                                        <th>次日留存率</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Page wrapper  -->
+    <!-- ============================================================== -->
+</div>
+<!-- ============================================================== -->
+<!-- End Wrapper -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- customizer Panel -->
+<!-- ============================================================== -->
+<div class="chat-windows"></div>
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
+<script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="../assets/libs/daterangepicker/moment.min.js"></script>
+<!-- Bootstrap tether Core JavaScript -->
+<script src="../assets/libs/popper.js/dist/umd/popper.min.js"></script>
+<script src="../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- apps -->
+<script src="../../dist/js/app.min.js"></script>
+<script src="../../dist/js/app.init.js"></script>
+<script src="../../dist/js/app-style-switcher.js"></script>
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src="../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+<script src="../assets/extra-libs/sparkline/sparkline.js"></script>
+<!--Wave Effects -->
+<script src="../../dist/js/waves.js"></script>
+<!--Menu sidebar -->
+<script src="../../dist/js/sidebarmenu.js"></script>
+<!--Custom JavaScript -->
+<script src="../../dist/js/custom.min.js"></script>
+<script src="../../dist/js/pages/controlTable.js"></script>
+<!-- chartist chart -->
+<script src="../assets/libs/chartist/dist/chartist.min.js"></script>
+<script src="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+<!--c3 JavaScript -->
+<script src="../assets/libs/d3/dist/d3.min.js"></script>
+<script src="../assets/libs/c3/c3.min.js"></script>
+<!--echarts.js-->
+<script src="../assets/libs/echarts/dist/echarts.js"></script>
+<!--daterangepicker.js-->
+<script src="../assets/libs/moment/moment.js"></script>
+<script src="../assets/libs/daterangepicker/daterangepicker.js"></script>
+<script src="../../dist/js/myApp/common/rangepicker.js"></script>
+
+<!--This page js-->
+<script src="../../dist/js/myApp/userAnalyse/increaseTrend.js"></script>
+<script src="../../dist/js/myApp/userAnalyse/increaseQuality.js"></script>
+<script src="../../dist/js/myApp/userAnalyse/userAnalyseCommon.js"></script>
+<script src = "../../dist/js/myApp/common.js"></script>
+<script src="../assets/libs/datatables/media/js/jquery.dataTables.js"></script>
+
+<script src="../../dist/js/myApp/userAnalyse/checkClick.js"></script>
+<script src="../../dist/js/myApp/common/pageTitle.js"></script>
+<script src="../../dist/js/myApp/common/chartCommon.js"></script>
+</body>
+
+</html>

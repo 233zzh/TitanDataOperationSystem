@@ -1,0 +1,39 @@
+// 
+// Total Revenue
+.total-sales {
+    position: relative;
+
+    .chartist-tooltip {
+        background: $inverse;
+    }
+
+    .ct-series-a .ct-bar {
+        stroke: $info;
+    }
+
+    .ct-series-b .ct-bar {
+        stroke: $success;
+    }
+
+    .ct-series-c .ct-bar {
+        stroke: $danger;
+    }
+}
+
+// 
+// Sales Difference
+.ct-chart {
+    position: relative;
+
+    .ct-series-a .ct-slice-donut {
+        stroke: $success;
+    }
+
+    .ct-series-b .ct-slice-donut {
+        stroke: $light;
+    }
+
+    .ct-series-c .ct-slice-donut {
+        stroke: $info;
+    }
+}

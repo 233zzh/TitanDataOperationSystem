@@ -1,0 +1,222 @@
+// 
+// Calendar Widget
+// 
+
+.calendar {
+    float: $lft;
+    margin-bottom: 0;
+}
+
+.fc-view {
+    margin-top: 30px;
+}
+
+.none-border {
+    .modal-footer {
+        border-top: none;
+    }
+}
+
+.fc-toolbar {
+    margin-bottom: 5px;
+    margin-top: 15px;
+    h2 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+}
+
+.fc-day {
+    background: $white;
+}
+
+.fc-toolbar .fc-state-active,
+.fc-toolbar .ui-state-active,
+.fc-toolbar button:focus,
+.fc-toolbar button:hover,
+.fc-toolbar .ui-state-hover {
+    z-index: 0;
+}
+
+.fc-widget-header {
+    border: 0 !important;
+}
+
+.fc-widget-content {
+    border-color: rgba(120, 130, 140, 0.13) !important;
+}
+
+.fc {
+    th.fc-widget-header {
+        color: $body-color;
+        font-size: 13px;
+        line-height: 20px;
+        text-transform: uppercase;
+        font-weight: 300;
+        padding: 7px 0;
+    }
+    th.fc-sun,
+    th.fc-tue,
+    th.fc-thu,
+    th.fc-sat,
+    th.fc-mon,
+    th.fc-wed,
+    th.fc-fri {
+        background: #f2f7f8;
+    }
+}
+
+.fc-view {
+    margin-top: 0;
+}
+
+.fc-toolbar {
+    margin: 0;
+    padding: 24px 0;
+}
+
+.fc-button {
+    background: $white;
+    border: 1px solid $border-color;
+    color: $body-color;
+    text-transform: capitalize;
+    &:hover {
+        background: $light;
+        opacity: 0.8;
+    }
+}
+
+.fc-text-arrow {
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.fc-state-hover {
+    background: #F5F5F5;
+}
+
+.fc-unthemed .fc-today {
+    border: 1px solid $danger;
+    background: $light !important;
+}
+
+.fc-state-highlight,
+.fc-cell-overlay {
+    background: #f0f0f0;
+}
+
+.fc-unthemed {
+    .fc-today {
+        background: $white;
+    }
+}
+
+.fc-event {
+    border-radius: 0;
+    border: none;
+    background: $info;
+    color: $white !important;
+    padding: 5px 5px;
+    margin: 1px -1px 0 -1px;
+    cursor: move;
+    font-size: 13px;
+    text-align: center;
+}
+
+.calendar-event {
+    margin: 10px 5px 0 0;
+    padding: 6px 10px;
+    display: inline-block;
+    cursor: move;
+    color: $white;
+    text-align: center;
+    min-width: 140px;
+    background: $info;
+    a {
+        float: $rgt;
+        opacity: 0.6;
+        font-size: 10px;
+        color: $white;
+        margin: 4px 0 0 10px;
+    }
+}
+
+.fc-basic-view {
+    td.fc-week-number {
+        span {
+            padding-right: 5px;
+        }
+    }
+    .fc-day-number {
+        display: inline-block;
+        padding: 10px 15px;
+    }
+}
+.fc-state-default {
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.fc-basic-view .fc-body .fc-row {
+    min-height: 5rem;
+}
+
+.fc-toolbar .fc-button-group {
+    border: 1px solid $info;
+    border-radius: 4px;
+}
+
+.fc-toolbar .fc-button {
+    background: $info;
+    color: $white;
+    border: none;
+}
+
+.fc-toolbar .fc-button:hover {
+    background: $info;
+    opacity: 1;
+}
+
+.fc-toolbar .fc-button.fc-state-active {
+    background: $white;
+    color: $info;
+}
+
+
+.fc-widget-header {
+    border: 0px !important;
+}
+
+.fc-widget-content {
+    border-color: rgba(120, 130, 140, 0.13) !important;
+}
+
+.fc-widget-content tr {
+    border-bottom: none;
+}
+
+
+.fc-view {
+    margin-top: 0px;
+}
+
+.fc-toolbar {
+    margin: 0px;
+    padding: 24px 0px;
+}
+
+
+.fc-event {
+    border-radius: 0px;
+    border: none;
+    cursor: move;
+    color: $white !important;
+    font-size: 13px;
+    margin: 1px -1px 0 -1px;
+
+    padding: 5px 5px;
+    text-align: center;
+    background: $primary;
+}

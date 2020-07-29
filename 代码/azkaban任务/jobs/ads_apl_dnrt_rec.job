@@ -1,0 +1,4 @@
+#向 ads_apl_dnrt_rec 表中导入数据
+type=command
+dependencies=dws_apl_hsu_rec
+command=spark-submit --master yarn --deploy-mode cluster --class cn.edu.neu.titan.titanSpark.analysis.retention.function.DnrtRecFunction /BigData/jars/titanSpark-1.0-SNAPSHOT.jar

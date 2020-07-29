@@ -1,0 +1,75 @@
+{
+  "_args": [
+    [
+      "raphael@2.2.7",
+      "E:\\bitbucket\\bootstrap\\monster-getstarted\\monster"
+    ]
+  ],
+  "_from": "raphael@2.2.7",
+  "_id": "raphael@2.2.7",
+  "_inBundle": false,
+  "_integrity": "sha1-IxsZFB+NCGmG2PrOtm+LVi7iyBA=",
+  "_location": "/raphael",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "raphael@2.2.7",
+    "name": "raphael",
+    "escapedName": "raphael",
+    "rawSpec": "2.2.7",
+    "saveSpec": null,
+    "fetchSpec": "2.2.7"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/raphael/-/raphael-2.2.7.tgz",
+  "_spec": "2.2.7",
+  "_where": "E:\\bitbucket\\bootstrap\\monster-getstarted\\monster",
+  "author": {
+    "name": "Dmitry Baranovskiy"
+  },
+  "bugs": {
+    "url": "https://github.com/DmitryBaranovskiy/raphael/issues"
+  },
+  "contributors": [
+    {
+      "name": "Tomas Alabes",
+      "url": "https://github.com/tomasAlabes"
+    }
+  ],
+  "dependencies": {
+    "eve-raphael": "0.5.0"
+  },
+  "description": "JavaScript Vector Library",
+  "devDependencies": {
+    "bower": "1.8.0",
+    "eslint": "3.10.0",
+    "eslint-config-standard": "6.2.1",
+    "eslint-loader": "1.6.1",
+    "eslint-plugin-promise": "3.3.2",
+    "eslint-plugin-standard": "2.0.1",
+    "qunitjs": "2.0.1",
+    "webpack": "1.13.3"
+  },
+  "homepage": "http://dmitrybaranovskiy.github.io/raphael/",
+  "keywords": [
+    "svg",
+    "vml",
+    "javascript"
+  ],
+  "license": "MIT",
+  "main": "raphael.min.js",
+  "name": "raphael",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DmitryBaranovskiy/raphael.git"
+  },
+  "scripts": {
+    "build": "webpack && webpack --min && webpack --no-deps && webpack --no-deps --min",
+    "start": "npm install && bower install",
+    "test": "echo \"Open dev/test/index.html with your browser\" && exit 1"
+  },
+  "version": "2.2.7"
+}

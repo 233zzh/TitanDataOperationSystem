@@ -1,0 +1,26 @@
+// 
+// Select2 
+// 
+.select2-container--classic .select2-selection--single,
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--single .select2-selection__rendered,
+.select2-container--default .select2-selection--single .select2-selection__arrow,
+.select2-container--default .select2-selection--multiple {
+	border-color: $border-color;
+	color: $body-color;
+    height: 40px;
+    line-height: 40px;
+}
+
+.select2-container--default .select2-selection--multiple {
+    line-height: 27px;
+    height: auto;
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice,
+.select2-container--default .select2-selection--multiple .select2-selection__choice,
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+	background-color: $info;
+	border-color: $info;
+	color: $white;
+}

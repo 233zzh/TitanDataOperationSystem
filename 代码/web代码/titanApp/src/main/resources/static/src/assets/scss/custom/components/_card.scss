@@ -1,0 +1,65 @@
+// 
+// Card
+//
+.card {
+	margin-bottom: $card-margin-bottom;
+    .card-subtitle {
+    	margin-bottom: $card-subtitle-bottom;
+    	font-weight: $font-weight-light;
+        color: $text-muted;
+    }
+    .card-title {
+    	margin-bottom: $card-title-bottom;
+    	font-weight: $font-weight-normal;
+    }
+    .card-actions {
+        float: $rgt;
+        a {
+        	cursor: pointer;
+        	padding: 0 5px;
+        }
+    }
+    .card-header .card-title {
+    	margin-bottom: 0;
+    }
+} 
+
+// 
+// Card Group
+// 
+.card-group {
+	margin-bottom: $card-margin-bottom;
+    .card {
+    	border-right: 1px solid $border-color;
+    }
+}
+
+// 
+// Hover Card
+// 
+.card-hover{
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    transition: all .25s ease;
+    &:hover{
+        webkit-transform: translateY(-4px) scale(1.01);
+        -moz-transform: translateY(-4px) scale(1.01);
+        -ms-transform: translateY(-4px) scale(1.01);
+        -o-transform: translateY(-4px) scale(1.01);
+        transform: translateY(-4px) scale(1.01);
+        -webkit-box-shadow: 0 14px 24px rgba(62,57,107,.1);
+        box-shadow: 0 14px 24px rgba(62,57,107,.1);
+    }
+}
+
+// 
+// Draggable Cards
+// 
+.draggable-cards .card-header{
+	cursor: move;
+}
+.card-moved .card {
+	background: $info;
+    color: $white;
+}

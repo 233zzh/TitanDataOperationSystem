@@ -1,0 +1,103 @@
+// 
+// Sparkline Chart
+// 
+html body { 
+	.jqstooltip,
+	.flotTip {
+		height: auto !important;
+		width: auto !important;
+		background: $gray-900;
+		border-color: $gray-900;
+		color: $white;
+		padding: 5px 10px;
+	}
+
+	.jqstooltip {
+		border-color: tranparent;
+		border-radius: 60px;
+	}
+}
+
+// 
+// Chartist Chart
+// 
+// Tooltip for the chartist charts
+// 
+.chartist-tooltip {
+	position: absolute;
+	display: inline-block;
+	opacity: 0;
+	min-width: 50px;
+	padding: 5px 10px;
+	background: #313131;
+	color: $white;
+	border-radius: 5px;
+	font-weight: 500;
+	text-align: center;
+	pointer-events: none;
+	z-index: 1;
+	-webkit-transition: opacity .2s linear;
+	-moz-transition: opacity .2s linear;
+	-o-transition: opacity .2s linear;
+	transition: opacity .2s linear; 
+	&:before {
+		display: none;
+	}
+	&.tooltip-show {
+		opacity: 1; 
+	}
+}
+
+.ct-area, .ct-line {
+  pointer-events: none; 
+}
+
+// 
+// C3 Chart
+// 
+
+.c3-chart-arcs-title {
+	fill: $text-muted;
+}
+
+.c3 line,
+.c3 path {
+	stroke: rgba(0,0,0,.2);
+}
+.c3-chart-arc path{
+	stroke:transparent;
+}
+
+// 
+// Guage Chart
+// 
+
+.gaugejs-box {
+	position: relative;
+	margin: 0 auto;
+}
+
+.gaugejs-box canvas.gaugejs {
+	width: 100% !important;
+	height: auto !important;
+}
+
+// 
+//  CSS Bar
+// 
+.css-bar {
+	z-index: 9;
+}
+
+// 
+// Flot Chart
+// 
+.flot-chart {
+  display: block;
+  height: 400px; 
+}
+
+.flot-chart-content {
+  width: 100%;
+  height: 400px; 
+}

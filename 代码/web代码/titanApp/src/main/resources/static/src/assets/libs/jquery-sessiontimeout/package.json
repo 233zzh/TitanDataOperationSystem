@@ -1,0 +1,57 @@
+{
+  "_from": "jquery-sessiontimeout@^1.1.0",
+  "_id": "jquery-sessiontimeout@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-IxxEGymSTSIEbuHtlRQdA+9zfEQ=",
+  "_location": "/jquery-sessiontimeout",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "jquery-sessiontimeout@^1.1.0",
+    "name": "jquery-sessiontimeout",
+    "escapedName": "jquery-sessiontimeout",
+    "rawSpec": "^1.1.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.1.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery-sessiontimeout/-/jquery-sessiontimeout-1.1.0.tgz",
+  "_shasum": "231c441b29924d22046ee1ed95141d03ef737c44",
+  "_spec": "jquery-sessiontimeout@^1.1.0",
+  "_where": "E:\\bitbucket\\bootstrap\\elite-bt4\\dark",
+  "author": {
+    "name": "Travis Horn"
+  },
+  "bugs": {
+    "url": "https://github.com/travishorn/jquery-sessionTimeout/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "After a set amount of time, a dialog is shown to the user with the option to either log out now, or stay connected. If log out now is selected, the page is redirected to a logout URL. If stay connected is selected, a keep-alive URL is requested through AJAX. If no options is selected after another set amount of time, the page is automatically redirected to a timeout URL.",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-uglify": "~0.2.2"
+  },
+  "homepage": "https://github.com/travishorn/jquery-sessionTimeout#readme",
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "alert",
+    "ajax"
+  ],
+  "license": "MIT",
+  "main": "jquery.sessionTimeout.js",
+  "name": "jquery-sessiontimeout",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/travishorn/jquery-sessionTimeout.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "version": "1.1.0"
+}

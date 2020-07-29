@@ -1,0 +1,314 @@
+// #############################
+// Theme Fonts
+// #############################
+// Google Fonts For the Theme
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+// #############################
+// All Colors of Bootstrap Overrides
+// #############################
+
+$white: #fff !default;
+$gray-100: #f2f4f8 !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #a1aab2 !default;
+$gray-600: #6c757d !default;
+$gray-700: #4F5467 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$blue: #1e88e5 !default;
+$indigo: #6610f2 !default;
+$purple: #7460ee !default;
+$pink: #e83e8c !default;
+$red: #fc4b6c !default;
+$orange: #fb8c00 !default;
+$yellow: #ffb22b !default;
+$green: #21c1d6 !default;
+$teal: #20c997 !default;
+$cyan: #26c6da !default;
+$primary: #7460ee !default;
+$text-muted: $gray-500 !default;
+$inverse: #2f3d4a !default;
+
+$dark-transparent: rgba(0, 0, 0, 0.05);
+
+$colors: ( blue: $blue,
+indigo: $indigo,
+purple: $purple,
+pink: $pink,
+red: $red,
+orange: $orange,
+yellow: $yellow,
+green: $green,
+teal: $teal,
+cyan: $cyan,
+white: $white,
+gray: $gray-600,
+gray-dark: $gray-800);
+
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $blue !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+$cyan: $cyan !default;
+$orange: $orange !default;
+$megna: #01c0c8 !default;
+
+$light-danger: #f9e7eb;
+$light-success: #e8fdeb;
+$light-warning: #fff8ec;
+$light-primary: #f1effd;
+$light-info: #cfecfe;
+$light-inverse: #f6f6f6;
+$light-megna: #e0f2f4;
+
+$dark-danger: #e6294b;
+$dark-success: #1eacbe;
+$dark-warning: #e9ab2e;
+$dark-primary: #6352ce;
+$dark-info: #028ee1;
+$dark-red: #d61f1f;
+$dark-inverse: #232a37;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(( 
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "cyan": $cyan,
+    "orange": $orange,
+    "purple": $purple,
+    "inverse": $inverse,
+    "megna": $megna,
+    "light-danger": $light-danger,
+    "light-success":  $light-success,
+    "light-warning": $light-warning,
+    "light-primary": $light-primary,
+    "light-info": $light-info,
+    "light-inverse": $light-inverse,
+    "light-megna": $light-megna,
+    "dark-danger": $dark-danger,
+    "dark-success": $dark-success,
+    "dark-warning": $dark-warning,
+    "dark-primary": $dark-primary,
+    "dark-info": $dark-info
+),
+$theme-colors);
+
+// #############################
+// Typography
+// #############################
+
+$font-size-base: 0.875rem;
+$font-family-sans-serif: 'Poppins',
+sans-serif !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 500 !default;
+$font-weight-base:  300 !default;
+
+$h1-font-size: 36px !default;
+$h2-font-size: 24px !default;
+$h3-font-size: 21px !default;
+$h4-font-size: 18px !default;
+$h5-font-size: 16px !default;
+$h6-font-size: 14px !default;
+
+// #############################
+// Typography Settings of Fonts
+// #############################
+
+$headings-margin-bottom: (1rem / 2) !default;
+$headings-font-weight: 400 !default;
+$headings-color: #455a64 !default;
+
+// #############################
+// Quickly modify global styling by enabling or disabling optional features.
+// #############################
+
+$enable-caret: true !default;
+$enable-rounded: true !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-hover-media-query: false !default;
+$enable-grid-classes: true !default;
+$enable-print-styles: true !default;
+
+// #############################
+// Body Color & bgColor Settings
+// #############################
+
+$body-bg: #eef5f9;
+$body-color: #67757c !default;
+
+// #############################
+// Grid Settings
+// #############################
+$grid-gutter-width: 30px !default;
+$grid-breakpoints: (xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1600px) !default;
+
+$sizes: () !default;
+$sizes: map-merge((25: 25%,
+        30: 30%,
+        35: 35%,
+        40: 40%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto),
+    $sizes);
+
+
+// #############################
+// Breadcrumbs Settings
+// #############################
+$breadcrumb-bg: $body-bg;
+$breadcrumb-margin-bottom: 1.5rem;
+
+// #############################
+// Dropdowns Settings
+// #############################
+$dropdown-item-padding-x: 1rem !default;
+$dropdown-item-padding-y: .65rem !default;
+$dropdown-border-color: $gray-200;
+$dropdown-divider-bg: $gray-100;
+$dropdown-link-color: $gray-600 !default;
+$dropdown-box-shadow: 1px 1px 15px rgba(0, 0, 0, .1) !default;
+$dropdown-border-width: 0 !default;
+
+// #############################
+// Buttons Settings
+// #############################
+$btn-secondary-border: $gray-300;
+
+// 
+// Button Shadow & Hover
+// 
+$enable-shadows: true !default;
+$btn-box-shadow:  0 1px 0 rgba($white, .15) !default;
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color},
+  .btn-outline-#{$color} {
+   box-shadow: 0 2px 2px rgba($value, 0.05);
+   &:hover {
+       box-shadow: 0 8px 15px rgba($value, 0.3);
+   }
+  }
+}
+
+// #############################
+// Tables
+// #############################
+$table-color: #67757c;
+$table-bg-accent: $gray-100;
+$table-bg-hover: $gray-100;
+$table-hover-bg: $gray-100 !default;
+$table-cell-padding: .75rem !default;
+$table-bg-level: -10 !default;
+$table-border-color: #e8eef3 !default;
+
+// #############################
+// Components active Colors Settings
+// #############################
+$component-active-color: $white !default;
+$component-active-bg: $blue !default;
+
+// #############################
+// Forms
+// #############################
+
+$input-group-addon-bg: $gray-100;
+$input-border-color: $gray-200;
+$input-color: #54667a;
+$input-font-weight: 400;
+$input-group-addon-border-color: $gray-200;
+$input-btn-focus-color: rgba(0, 0, 0, .25) !default;
+$input-focus-border-color: rgba(0, 0, 0, 0.25) !default;
+$custom-control-indicator-active-bg: rgba(0, 0, 0, 35%) !default;
+$custom-select-indicator: url(../../src/assets/images/custom-select.png) !default;
+$input-btn-focus-box-shadow: transparent !default;
+$custom-select-focus-box-shadow: transparent !default;
+$custom-select-indicator: str-replace(url(""), "%23") !default;
+
+// #############################
+// Border settings
+// #############################
+
+$border-width: 1px !default;
+$border-color: $gray-200 !default;
+$border-radius: 4px !default;
+$border-radius-lg: 5px !default;
+$border-radius-sm: 1px !default;
+
+// #############################
+// Progress bars settings
+// #############################
+
+$progress-height: 5px !default;
+
+// #############################
+// Tabs active bg settings
+// #############################
+
+$nav-tabs-link-active-bg: $white !default;
+
+// #############################
+// Navbar dark & light font colors
+// #############################
+
+$navbar-dark-color: rgba($white, 1) !default;
+$navbar-dark-hover-color: rgba($white, 1) !default;
+
+// #############################
+// Card Related Settings Here
+// #############################
+
+$card-spacer-x: 1.25rem; // Card Padding
+$card-border-width: 0px !default;
+$card-border-radius: 4px !default;
+$card-columns-margin: 20px !default;
+
+// #############################
+// Badge
+// #############################
+
+$badge-font-weight: 400 !default;
+$badge-pill-padding-x: 0.5rem !default;
+$badge-font-size: 0.75rem !default;
+$badge-padding-y : 3px !default;
+$badge-padding-x : 10px !default;
+
+// #############################
+// Shadow
+// #############################
+$box-shadow-sm: 0px 2px 9px 0px rgba(169, 184, 200, 0.2) !default;
+
+$text-muted: #8392a5 !default;
+
+
+// 
+// Dropdown
+// 
+$dropdown-color: $gray-900;
+$dropdown-font-size: 0.875rem !default;
+$dropdown-divider-bg: $border-color;
+

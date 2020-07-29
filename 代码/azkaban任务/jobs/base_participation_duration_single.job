@@ -1,0 +1,3 @@
+type=command
+dependencies=ads_flw_sduration_cube
+command=spark-submit --master yarn --deploy-mode cluster --class cn.edu.neu.titan.titanSpark.migration.participation.function.ParticipationDurationSingle /BigData/jars/titanSpark-1.0-SNAPSHOT.jar

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.hive.shims:hive-shims-0.23:2.3.7">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/hive/shims/hive-shims-0.23/2.3.7/hive-shims-0.23-2.3.7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/hive/shims/hive-shims-0.23/2.3.7/hive-shims-0.23-2.3.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/hive/shims/hive-shims-0.23/2.3.7/hive-shims-0.23-2.3.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

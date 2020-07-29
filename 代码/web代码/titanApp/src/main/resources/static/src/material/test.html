@@ -1,0 +1,179 @@
+<!--
+  Created by IntelliJ IDEA.
+  @Author: Zhao Lei
+  @Email: 1176066749@qq.com
+  @Date: 2020/6/22 
+  @Time: 8:33
+  @Version: 1.0
+  @Description:  
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testTab</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>Material pro admin Template - The Ultimate Multipurpose admin template</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/xtremeadmin/" />
+    <link href="../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link href="../../dist/js/pages/chartist/chartist-init.css" rel="stylesheet">
+    <link href="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link href="../assets/libs/c3/c3.min.css" rel="stylesheet">
+    <!--This page css    -->
+    <link rel="stylesheet" type="text/css" href="../assets/libs/daterangepicker/daterangepicker.css">
+    <link href="../assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../../dist/css/style.min.css" rel="stylesheet">
+    <!--引入datetimePicker-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+<body>
+<ul class="nav nav-pills" id="myTab">
+    <li class="active"><a href="#divstyle" data-toggle="tab">风格设置</a></li>
+    <li><a href="#divmystyle" data-toggle="tab">自定义风格</a></li>
+    <li><a href="#divbanshi" data-toggle="tab">版式设置</a></li>
+</ul>
+<div class="tab-content">
+    <!--1-->
+    <div class="tab-pane active" id="divstyle">
+        <div class="tabbable" style="margin: 3px;">
+            <ul class="nav nav-pills" id="divstyletab1">
+                <li class="active"><a href="#tab11" data-toggle="tab">最近</a></li>
+                <li><a href="#tab12" data-toggle="tab">人文</a></li>
+                <li><a href="#tab13" data-toggle="tab">人文</a></li>
+            </ul>
+            <div class="tab-content">
+                <!-- 第一个tab -->
+                <div class="tab-pane fade active in" id="tab11">
+                    a
+                </div>
+                <!-- 第二个tab -->
+                <div class="tab-pane fade" id="tab12">
+                    b
+                </div>
+                <!-- 第三个tab -->
+                <div class="tab-pane fade" id="tab13">
+                    c
+                </div>
+                <!-- 中间图表结束 -->
+            </div>
+        </div>
+    </div>
+    <!-- 2 -->
+    <div class="tab-pane" id="divmystyle">
+        <div class="tabbable" style="margin: 3px;">
+            <ul class="nav nav-pills" id="divstyletab2">
+                <li class="active"><a href="#tab21" data-toggle="tab">最近</a></li>
+                <li><a href="#tab22" data-toggle="tab">人文</a></li>
+                <li><a href="#tab23" data-toggle="tab">人文</a></li>
+            </ul>
+            <div class="tab-content">
+                <!-- 第一个tab -->
+                <div class="tab-pane fade active in" id="tab21">
+                    aa
+                </div>
+                <!-- 第二个tab -->
+                <div class="tab-pane fade" id="tab22">
+                    bb
+                </div>
+                <!-- 第三个tab -->
+                <div class="tab-pane fade" id="tab23">
+                    cc
+                </div>
+                <!-- 中间图表结束 -->
+            </div>
+        </div>
+    </div>
+    <!-- 3 -->
+    <div class="tab-pane" id="divbanshi">
+        <div class="tabbable" style="margin: 3px;">
+            <ul class="nav nav-pills" id="divstyletab">
+                <li class="active"><a href="#tab31" data-toggle="tab">最近</a></li>
+                <li><a href="#tab32" data-toggle="tab">人文</a></li>
+                <li><a href="#tab33" data-toggle="tab">人文</a></li>
+            </ul>
+            <div class="tab-content">
+                <!-- 第一个tab -->
+                <div class="tab-pane fade active in" id="tab31">
+                    aaa
+                </div>
+                <!-- 第二个tab -->
+                <div class="tab-pane fade" id="tab32">
+                    bbb
+                </div>
+                <!-- 第三个tab -->
+                <div class="tab-pane fade" id="tab33">
+                    ccc
+                </div>
+                <!-- 中间图表结束 -->
+            </div>
+        </div>
+    </div>
+    <!-- tab end -->
+</div>
+<script type="text/javascript">
+    $(function() {
+        $('#myTab a').click(function(e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+        $('#divstyletab a').click(function(e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+</script>
+
+<script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="../assets/libs/daterangepicker/moment.min.js"></script>
+<!-- Bootstrap tether Core JavaScript -->
+<script src="../assets/libs/popper.js/dist/umd/popper.min.js"></script>
+<script src="../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- apps -->
+<script src="../../dist/js/app.min.js"></script>
+<script src="../../dist/js/app.init.js"></script>
+<script src="../../dist/js/app-style-switcher.js"></script>
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src="../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+<script src="../assets/extra-libs/sparkline/sparkline.js"></script>
+<!--Wave Effects -->
+<script src="../../dist/js/waves.js"></script>
+<!--Menu sidebar -->
+<script src="../../dist/js/sidebarmenu.js"></script>
+<!--Custom JavaScript -->
+<script src="../../dist/js/custom.min.js"></script>
+<script src="../../dist/js/pages/controlTable.js"></script>
+<!-- chartist chart -->
+<script src="../assets/libs/chartist/dist/chartist.min.js"></script>
+<script src="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+<!--c3 JavaScript -->
+<script src="../assets/libs/d3/dist/d3.min.js"></script>
+<script src="../assets/libs/c3/c3.min.js"></script>
+<!--This page js-->
+<script src="../assets/libs/echarts/dist/echarts.js"></script>
+<script src="../assets/libs/moment/moment.js"></script>
+<script src="../assets/libs/daterangepicker/daterangepicker.js"></script>
+<script src="../../dist/js/myApp/common/rangepicker.js"></script>
+
+<script src="../assets/libs/datatables/media/js/jquery.dataTables.min.js"></script>
+<script src="../../dist/js/pages/datatable/custom-datatable.js"></script>
+<script src="../../dist/js/pages/datatable/datatable-basic.init.js"></script>
+
+<!--设置 Echarts 图-->
+<script src="../../dist/js/myApp/userAnalyse/activeUser.js"></script>
+<script src="../../dist/js/myApp/userAnalyse/userAnalyseCommon.js"></script>
+<script src = "../../dist/js/myApp/common.js"></script>
+</body>
+</html>

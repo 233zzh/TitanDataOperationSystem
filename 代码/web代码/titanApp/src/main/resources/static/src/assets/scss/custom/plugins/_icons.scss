@@ -1,0 +1,30 @@
+// 
+// Material Icons
+// 
+.m-icon {
+    width: 33%;
+    display: inline-block;
+}
+
+@include media-breakpoint-down(sm) {
+    .m-icon {
+        width: 100%;
+    }
+}
+
+// 
+// Other Icons
+// 
+.f-icon,
+.t-icon,
+.w-icon,
+.sl-icon,
+.if-icon,
+.m-icon {
+    cursor: pointer;
+    padding: 13px 15px;
+    @extend %text_wrapping;
+    &:hover {
+        background-color: $gray-100;
+    }
+}

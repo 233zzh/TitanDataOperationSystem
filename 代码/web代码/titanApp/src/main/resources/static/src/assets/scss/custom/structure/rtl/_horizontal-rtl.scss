@@ -1,0 +1,132 @@
+html[dir=rtl] {
+	#main-wrapper[data-layout="horizontal"]{
+
+		// Page  wrapper , Horizontal layout
+		// 
+		.sidebar-nav {
+	        ul {
+	           .sidebar-item {
+	               .sidebar-link {
+	                     border-right: 0;
+	                }
+	                &.selected > .sidebar-link{
+	                    border-right: 0;
+	                }
+	            }
+	        }
+	    }
+
+	    .left-sidebar{
+	        &[data-sidebarbg="skin6"]{
+	             .sidebar-nav {
+	                ul {
+	                   .sidebar-item {
+	                        &.selected > .sidebar-link{
+	                            border-left: 0 !important;
+	                        }
+	                    }
+	                }
+	            }
+	        }
+	    }
+
+		#main-wrapper {
+			&[data-sidebartype="full"][data-layout="horizontal"] {
+				.page-wrapper {
+					margin-right: auto;
+					margin-left: auto;
+				}
+			}
+		}		
+	}
+
+	// Above Tablet
+	// 
+	@include media-breakpoint-up(md) {
+		#main-wrapper {
+			&[data-sidebartype="full"][data-layout="horizontal"] {
+				.sidebar-nav {
+					#sidebarnav {
+						>.sidebar-item{
+							ul {
+								right: 0;
+								left: auto;
+								.second-level {
+									right: $sidebar-li-width;
+									left: auto;
+								}
+							}
+							&:last-child {
+								.second-level {
+									left: $sidebar-li-width;
+									right: auto;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		#main-wrapper[data-layout="horizontal"]{
+			&[data-boxed-layout="boxed"] {
+				// Set width of topbar, sidebar & page-wrapper
+	        	// 
+	            .top-navbar, .scroll-sidebar, .page-wrapper{
+	                position: relative;
+	            	max-width: $boxed-width;
+	                margin: 0 auto;
+	            }
+			}
+			&[data-boxed-layout="full"] {
+				// Set width of page-wrapper
+	        	// 
+	           .page-wrapper {
+	           		margin-right: 0;
+	            }
+			}
+			// sidebartype=full 
+           // 
+            &[data-sidebar-position="fixed"][data-sidebartype="full"] {
+                .topbar .top-navbar .navbar-collapse {
+                	margin-right: 0;
+                }
+            }
+		}
+	}
+
+	@include media-breakpoint-only(md) {
+		#main-wrapper[data-layout="horizontal"] {
+			// sidebartype=full 
+           // 
+            &[data-sidebar-position="fixed"][data-sidebartype="mini-sidebar"] {
+                .topbar .top-navbar .navbar-collapse {
+                	margin-right: 0;
+                }
+            }
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+    	#main-wrapper[data-layout="horizontal"] {
+
+    		// sidebartype=mini-sidebar
+    		// 
+            &[data-sidebartype="mini-sidebar"] {
+                .left-sidebar {
+                	right: -$sidebar-width-full;
+                    left: auto;
+                }
+            }
+            &.show-sidebar {
+                .left-sidebar {
+                	right: 0;
+                    left: auto;
+                    .sidebar-footer {
+                    	right: 0;
+                        left: auto;
+                    }
+                }
+            }
+        }
+    }        
+}

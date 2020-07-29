@@ -1,0 +1,3 @@
+type=command
+dependencies=dws_agg_usr_cube
+command=spark-submit --master yarn --deploy-mode cluster --class cn.edu.neu.titan.titanSpark.analysis.flow.function.AggMStartCubeFunction /BigData/jars/titanSpark-1.0-SNAPSHOT.jar

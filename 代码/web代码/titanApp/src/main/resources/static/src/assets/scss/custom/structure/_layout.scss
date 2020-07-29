@@ -1,0 +1,530 @@
+// ###############################################
+// Main wrapper
+// ###############################################
+#main-wrapper {
+	width: 100%;
+    overflow: hidden;
+}
+
+// ###############################################
+// Page Wrapper
+// ###############################################
+.page-wrapper {
+    position: relative;
+	background: $body-bg;
+    display: none;
+    transition: 0.2s ease-in;
+}
+
+.page-wrapper>.container-fluid {
+	padding: $page-wrapper-container-padding;
+	min-height: $container-min-height;
+}
+
+// ###############################################
+// Footer
+// ###############################################
+.footer {
+	background: $white;
+    border-top: 1px solid $border-color;
+	padding: $footer-padding;
+}
+
+// ###############################################
+// Sticky inner left part
+// ###############################################
+.left-part {
+    position: absolute;
+	height: 100%;
+    width: $left-part-width;
+	border-right: 1px solid $border-color;
+    &.fixed-left-part {
+        position: fixed;
+        top: 0;
+        padding-top: 10px;
+    }
+    .show-left-part {
+        position: absolute;
+        top: 45%;
+        right: -41px;
+    }
+}
+
+.right-part {
+	width: $right-part-width;
+    height: $right-part-height;
+    //overflow: auto;
+    margin-left: $left-part-width;
+}
+
+.reverse-mode {
+    .left-part {
+    	right: 0;
+    	border-left: 1px solid $border-color;
+    }
+    .show-left-part {
+    	right: auto;
+        left: -41px;
+    }
+    .right-part {
+    	margin-left: 0;
+        margin-right: $left-part-width;
+    }
+}
+
+
+// ################################################################################# //
+//  Vertical Layout
+// ################################################################################# //
+#main-wrapper[data-layout="vertical"] {
+
+	// Topbar
+	// ###############################################
+	.topbar .top-navbar .navbar-header {
+        //width: $sidebar-width-full;
+        transition: 0.2s ease-in;
+    }
+
+    // Sidebar type=full
+	// ###############################################
+    &[data-sidebartype="full"] {
+        .page-wrapper {
+        	margin-left: $sidebar-width-full;
+        }
+    }
+
+    // Sidebar type=iconbar
+	// ###############################################
+    &[data-sidebartype="iconbar"] {
+
+    	// Page-wrapper
+    	// #############################################
+        .page-wrapper {
+        	margin-left: $sidebar-width-iconbar;
+        }
+
+        // Logo
+        // #############################################
+        .navbar-brand {
+            .logo-text {
+                display: none;
+            }
+        }
+
+        // Left-sidebar & Navbar brand width same as sidebar width
+    	// #############################################
+        .left-sidebar,
+        .left-sidebar .sidebar-footer,
+        .topbar .top-navbar .navbar-header {
+            width: $sidebar-width-iconbar;
+        }
+
+        .sidebar-nav ul .sidebar-item {
+            width: calc( 180px - 30px);
+        }
+
+        // Setting sidebar nav links 
+    	// #############################################
+        .sidebar-nav {
+            ul .sidebar-item {
+                .first-level {
+                    padding-left: 0;
+                }
+                .sidebar-link {
+                    display: block;
+                    white-space: nowrap;
+                    text-align: center;
+                	@extend %text_wrapping;
+                    i {
+                        display: block;
+                    	width: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    // Sidebar type=overlay
+	// ###############################################
+    &[data-sidebartype="overlay"] {
+
+    	// navbar-header
+    	// ###############################################
+        .topbar .top-navbar .navbar-header {
+        	width: $sidebar-width-full;
+        }
+
+        // left sidebar
+    	// ###############################################
+        .left-sidebar {
+        	left: -$sidebar-width-full;
+        }
+
+        // When sidebar is open
+        // ###############################################
+        &.show-sidebar {
+            .left-sidebar {
+            	left: 0;
+            }
+        }
+    }
+
+    // Sidebar Postions
+	// ###############################################
+	&[data-sidebar-position="fixed"] {
+
+		// Topbar
+		// #############################################
+        .topbar .top-navbar .navbar-header {
+            position: fixed;
+            z-index: 10;
+        }
+
+        // Left sidebar
+		// #############################################
+        .left-sidebar {
+            position: fixed;
+        }
+    }
+
+    // Topbar Postions
+	// ###############################################
+	&[data-header-position="fixed"] {
+
+		// Topbar
+		// #############################################
+        .topbar {
+            position: fixed;
+            width: 100%;
+        }
+
+        // Page wrapper
+        // #############################################
+        .page-wrapper {
+            padding-top: $topbar-height;
+        }
+    }
+
+    // Boxed Layout
+	// ###############################################
+	&[data-boxed-layout="boxed"] {
+        position: relative;
+		max-width: $boxed-width;
+        margin:  0 auto;
+        box-shadow: 1px 0 80px rgba(0, 0, 0, 0.2);
+    }
+
+    // Boxed Layout with fixed topbar
+	// ###############################################
+    &[data-boxed-layout="boxed"][data-header-position="fixed"] {
+        .topbar {
+        	max-width: $boxed-width;
+        }
+    }
+}
+
+// ################################################################################# //
+//  Vertical Layout - Responsive  Layout
+// ################################################################################# //
+// Desktop Screen
+@include media-breakpoint-up(md) {
+	#main-wrapper[data-layout="vertical"] {
+
+		// Sidebar type=full
+		// ###############################################
+		&[data-sidebartype="full"] {
+
+			// Topbar
+			// ###############################################
+            .topbar .top-navbar .navbar-header {
+            	width: $sidebar-width-full;
+            }
+        }
+
+        // Sidebar type=full & overlay with fixed sidebar
+		// ###############################################
+		&[data-sidebar-position="fixed"][data-sidebartype="full"],
+        &[data-sidebar-position="fixed"][data-sidebartype="overlay"] {
+
+        	// Topbar
+        	// ###############################################
+            .topbar .top-navbar .navbar-collapse {
+            	margin-left: $sidebar-width-full;
+            }
+        }
+
+        // Sidebar type=mini-sidebar with fixed sidebar
+		// ###############################################
+		&[data-sidebar-position="fixed"][data-sidebartype="mini-sidebar"] {
+
+			// Topbar
+			// ###############################################
+            .topbar .top-navbar .navbar-collapse {
+            	margin-left: $sidebar-width-mini;
+            }
+        }
+
+        // Sidebar type=iconbar with fixed sidebar
+		// ###############################################
+		&[data-sidebar-position="fixed"][data-sidebartype="iconbar"] {
+
+			// Topbar
+			// ###############################################
+            .topbar .top-navbar .navbar-collapse {
+            	margin-left: $sidebar-width-iconbar;
+            }
+        }
+
+        // Sidebar type=mini-sidebar
+        // ###############################################
+        &[data-sidebartype="mini-sidebar"] {
+
+        	// Topbar
+        	// ###############################################
+            .topbar .top-navbar .navbar-header {
+            	width: $sidebar-width-mini;
+
+            	// Hide logo text
+            	// 
+                .logo-text {
+                    display: none;
+                }
+
+                // on full sidebar or on hover state
+                // 
+                &.expand-logo {
+                	width: $sidebar-width-full;
+                    .logo-text {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        // Mini-sidebar with fixed sidebar
+        // ###############################################
+        &[data-sidebar-position="fixed"][data-sidebartype="mini-sidebar"] {
+
+        	// Topbar 
+        	// 
+            .topbar .top-navbar .navbar-collapse {
+            	margin-left: $sidebar-width-mini;
+            }
+        }
+
+        // Sidebar type=mini-sidebar
+		// ###############################################
+		&[data-sidebartype="mini-sidebar"] {
+
+			// Page wrapper
+			// 
+            .page-wrapper {
+            	margin-left: $sidebar-width-mini;
+            }
+
+            // User Profile
+            // 
+            .user-profile {
+                .profile-img {
+                    margin-left: 9px;
+                }
+                .profile-text {
+                    display: none;
+                }
+            }
+
+            // Sidebar UI Lists
+            // 
+            .sidebar-nav {
+                ul {
+                    padding: 7px;
+                }
+                .hide-menu,
+                .has-arrow:after {
+                    display: none;
+                }
+
+                // Small Cap
+                // 
+                .nav-small-cap {
+                	justify-content: center;
+                    padding: $minisidebar-nav-cap-padding;
+                    i {
+                    	display: block;
+                    }
+                }
+
+                
+                ul {
+                    .sidebar-item {
+                    	// Main nav links
+                    	// 
+                        .sidebar-link {
+                        	padding: $minisidebar-link-padding;
+                        }
+                        // First Level
+                        // 
+                     	.first-level {
+                         	padding: $minisidebar-first-level-padding;
+                            .sidebar-item .sidebar-link {
+                            	padding: $minisidebar-link-first-level-padding;
+                            }
+                            .sidebar-item .sidebar-link i{
+                                display: block;
+                            }
+                     	}
+                    }
+                }
+            }
+
+            // Left sidebar
+            // 
+            .left-sidebar {
+            	width: $sidebar-width-mini;
+                .sidebar-footer {
+                    display: none;
+                }
+                &:hover {
+                	width: $sidebar-width-full;
+                    // User Profile
+                    // 
+                    .user-profile {
+                        .profile-img {
+                            margin-left: 30px;
+                        }
+                        .profile-text {
+                            display: block;
+                        }
+                    }
+                    .sidebar-nav {
+                        .hide-menu,
+                        .has-arrow:after {
+                            display: block;
+                        }
+
+                        // Small Cap
+                        // 
+                        .nav-small-cap {
+                        	justify-content: flex-start;
+                            i {
+                                display: none;
+                            }
+                        }
+
+                        // User Profile
+                        // 
+                        .user-profile {
+                            .profile-img {
+                            	width: $profile-pic-width-full;
+                                &::before {
+                                	width: $profile-pic-width-full;
+                                    height: $profile-pic-width-full;
+                                }
+                            }
+                            .u-dropdown {
+                                display: block;
+                            }
+                        }
+
+                        // Sidebar Links
+                        // 
+                        ul {
+                            .sidebar-item {
+                                .sidebar-link {
+                                    padding: $sidebar-link-padding;
+                                }
+                                 .first-level {
+                                    padding: $sidebar-first-level-padding;
+                                    .sidebar-item .sidebar-link {
+                                        padding:  $sidebar-first-level-link-padding;
+                                    }
+                                    .sidebar-item .sidebar-link i{
+                                        display: none;
+                                    }
+                                 }
+                            }
+                        }
+                    }
+                    .sidebar-footer {
+                        display: flex;
+                    }
+                }
+            }
+        }
+	}
+}
+
+// Mobile Screen
+// 
+@media(max-width:766px) {
+	// 
+	// Main wrapper
+	#main-wrapper {
+
+		// Sidebar type=mini-sidebar
+		// ###############################################
+		&[data-sidebartype="mini-sidebar"] {
+
+			// Left sidebar
+			// 
+            .left-sidebar,
+            .left-sidebar .sidebar-footer {
+            	left: -$sidebar-width-full;
+            }
+        }
+
+        // Open sidebar
+        // ###############################################
+        &.show-sidebar {
+            .left-sidebar,
+            .left-sidebar .sidebar-footer {
+            	left: 0;
+            }
+        }
+
+        // Sidebar position fixed with vertical layout && both with fixed
+        // ###############################################
+        &[data-layout="vertical"][data-sidebar-position="fixed"],
+        &[data-layout="vertical"][data-header-position="fixed"][data-sidebar-position="fixed"] {
+
+        	// Topbar
+        	// 
+            .topbar .top-navbar {
+                .navbar-collapse {
+                    position: relative;
+                	top: $topbar-height;
+                }
+            }
+        }
+	}
+
+	// Sticky inner sidebar
+	// 
+	.left-part {
+        position: fixed;
+		left: -$left-part-width;
+		background: $body-bg;
+        z-index: 1;
+        transition: 0.1s ease-in;
+
+        // On visible state
+        // 
+        &.show-panel {
+        	left: 0;
+        }
+    }
+    .reverse-mode .left-part{
+    	right: -$left-part-width;
+        left: auto;
+
+    	// On visible state
+        // 
+        &.show-panel {
+        	right: 0;
+        }
+    }
+    .right-part {
+    	width: 100%;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,149 @@
+// #############################
+// Theme Colors
+// #############################
+
+$themecolor: #009efb;
+$theme-light: #fff;
+$theme-dark: #212529;
+//$background-alt: #26c6da;
+
+$main-body-bg: #fff !default;
+
+// #############################
+// Skins For changing sidebar and logo bg colors
+// ############################# 
+$skin1: #1e88e5;
+$skin2: #00acc1;
+$skin3: #fc4b6c;
+$skin4: #7460ee;
+$skin5: #1d2126;
+$skin6: #fff;
+
+// #############################
+// Shadow default
+// #############################
+
+$shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+
+// #############################
+// Transitions
+// #############################
+
+$transitions: 0.2s ease-in;
+$transparent-dark-bg:rgba(0, 0, 0, 0.05);
+
+// #############################
+// Preloader settings here
+// #############################
+$spinner-width: 64px;
+$spinner-height: 64px;
+$spinner-position: calc(50% - 3.5px);
+
+// #############################
+// Header settings here
+// #############################
+
+/// height-width setting
+$topbar:$theme-light;
+$topbar-height: 70px;
+$topbar-navlink-height: 70px;
+$mega-dd-height: 480px;
+$topbar-dropdown-width: 300px;
+$horizontal-navbar-brand-width: 230px;
+
+/// pading setting
+$topbar-navlink-padding: 0px .75rem;
+$topbar-togglar-padding: 0 .75rem;
+$navbar-collapse-padding: 0px 10px 0 0;
+$topbar-navbrand-padding: 0 10px;
+$minisidebar-topbar-navbrand-padding: 0px 20px 0px 20px;
+$horizontal-pagewrapper-padding-top-sm: 78px;
+$horizontal-pagewrapper-padding-top-lg: 125px;
+$horizontal-boxed-page-breadcrumb-padding-lg: 25px 0 0;
+$horizontal-boxed-page-breadcrumb-container-padding-lg: 20px 30px;
+
+/// font-size setting
+$topbar-navlink-font-size: 19px;
+$topbar-navlink-text-size: 14px;
+
+// #############################
+// Sidebar Settings here
+// #############################
+/// Text color setting
+$sidebar: $theme-light;
+$sidebar-alt: #e8eff0;
+$sidebar-text: #fff;
+$sidebar-icons: #fff;
+$sidebar-text-dark: #607d8b;
+$sidebar-icons-dark: #99abb4;
+
+/// font-size setting
+$sidebar-icon-size: 21px;
+$sidebar-first-level-icon-size: 14px;
+$sidebar-footer-text-size: 18px;
+$sidebar-link-font-size: 15px;
+$nav-small-cap-font-size: 12px;
+
+/// Line height setting
+$sidebar-link-line-height: 25px;
+$sidebar-icon-line-height: 25px;
+
+/// sidebar height-width setting
+$sidebar-width-full: 240px;
+$sidebar-width-iconbar:180px;
+$sidebar-width-mini: 65px;
+$sidebar-icon-width: 30px;
+$sidebarheight: 54px;
+$sidebar-li-width: 220px;
+$sidebar-first-level-width: 400px;
+
+/// sidebar links padding setting
+$sidebar-link-padding: 8px 35px 8px 8px;
+$rtl-sidebar-link-padding: 8px 8px 8px 35px;
+$minisidebar-link-padding: 14px 12px;
+$rtl-minisidebar-link-padding: 14px 12px;
+$sidebar-first-level-padding: 10px 0 0 5px;
+$minisidebar-first-level-padding: 0 0 10px;
+$minisidebar-link-first-level-padding: 10px 12px;
+$sidebar-first-level-link-padding: 10px 35px 10px 20px;
+$rtl-minisidebar-link-first-level-padding: 10px 12px 10px 35px;
+$rtl-sidebar-first-level-link-padding: 10px 20px 10px 35px;
+$sidebar-footer-inner-padding: 15px;
+$sidebar-notibadge-inner-padding-x: 10px;
+$nav-cap-padding: 14px 14px 14px 20px;
+$minisidebar-nav-cap-padding: 14px 14px 14px 14px;
+
+/// User Profile img setting
+$profile-pic-width-full: 50px;
+$profile-pic-width-mini: 35px;
+
+/// box shadow setting
+$horizontal-list-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+
+// #############################
+// Page Layout Settings
+// #############################
+
+$boxed-width: 1200px; // boxed layout width
+$page-wrapper-container-padding: 20px 30px;
+$container-min-height: calc(100vh - 180px);
+$footer-padding: 17px 15px;
+$lft: left;
+$rgt: right;
+
+
+// #############################
+// Sticky Left & Right Sidebar
+// #############################
+$left-part-width:260px;
+$right-part-width: calc(100% - 260px);
+$right-part-height: calc(100vh - 126px);
+
+$font-weight-medium: 500;
+
+// #############################
+// Card Setting
+// #############################
+$card-margin-bottom: 30px;
+$card-title-bottom: 10px;
+$card-subtitle-bottom: 10px;

@@ -1,0 +1,196 @@
+// 
+// Topbar
+// 
+@import 'notify';
+.topbar {
+    position: relative;
+	height: $topbar-height;
+    background: $topbar;
+	z-index: 50;
+	transition: $transitions;
+	box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.05);
+    .navbar-collapse {
+    	padding: $navbar-collapse-padding;
+    }
+    .top-navbar {
+        min-height: $topbar-height;
+    	padding: 0;
+    	.dropdown-toggle::after {
+            display: none;
+        }
+        .navbar-header {
+            line-height: $topbar-navlink-height;
+            .navbar-brand {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: $topbar-navbrand-padding;
+                margin: 0;
+                .dark-logo {
+                	display: none;
+                }
+                .logo-icon {
+                	margin-right: 5px;
+                }
+            }
+        }
+        .navbar-nav>.nav-item>.nav-link {
+        	line-height:  $topbar-navlink-height;
+            height:  $topbar-navlink-height;
+        	padding: $topbar-navlink-padding;
+        	font-size: $topbar-navlink-font-size;
+        }
+        .navbar-nav>.nav-item{
+        	transition: 0.2s ease-in;
+            &:hover{
+                background: $transparent-dark-bg;
+            }
+        }
+    }
+    .user-dd, .mailbox {
+    	width: $topbar-dropdown-width;
+    }
+    .nav-toggler, .topbartoggler{
+        color: $theme-light;
+        padding: $topbar-togglar-padding;
+    }
+}
+
+// 
+// Search box
+// 
+.search-box {
+    .app-search {
+        position: absolute;
+        margin: 0px;
+        display: block;
+        z-index: 110;
+        width: 100%;
+        top: -1px;
+        box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+        display: none;
+        left: 0px;
+        input {
+        	width: 100%;
+            padding: 25px 40px 25px 20px;
+            border-radius: 0px;
+            font-size: 17px;
+            transition: 0.5s ease-in;
+            height: 70px;
+        }
+        .srh-btn {
+            position: absolute;
+            top: 23px;
+            right: 20px;
+            cursor: pointer;
+        }
+    }
+}
+
+// 
+// Mega Dropdown
+// 
+.topbar {
+    .mega-dropdown {
+        position: static;
+        .dropdown-menu {
+        	padding: 30px;
+            @extend %square;
+            width: 100%;
+            max-height: $mega-dd-height;
+            overflow: auto;
+        }
+    }  
+}
+
+.dropdown-user {
+    .user-list {
+        &:hover {
+            background: $light;
+        }
+    }
+}
+
+// 
+// Topbar Dropdown
+// 
+.topbar {
+	.dropdown-menu {
+		padding-top: 0;
+		border: 0;
+		box-shadow:1px 1px 15px rgba(0, 0, 0, 0.1);
+		.with-arrow{
+            position: absolute;
+            top: -10px;
+            width: 40px;
+            height: 10px;
+			overflow: hidden;
+			>span {
+				@extend %rotate45;
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                content: '';
+                top: 3px;
+                left: 15px;
+				background-color: $white;
+                border-radius: 6px 0 0 0;
+			}
+		}
+		&.dropdown-menu-right {
+            .with-arrow{
+            	right: 0px;
+                >span {
+                	right: 20px;
+                    left: auto;
+                }
+            }
+        }
+	}
+}
+
+// 
+// Mobile View Responsive
+// 
+@include media-breakpoint-down(sm) {
+	.topbar .top-navbar {
+        .navbar-collapse.show, .navbar-collapse.collapsing {
+            display: block;
+            width: 100%;
+            border-top: 1px solid $border-color;
+        }
+        .navbar-nav {
+        	flex-direction: row;
+            .dropdown{
+                position: static;
+            }
+        }
+        .navbar-nav>.nav-item>.nav-link{
+        	padding: 0 10px;
+        }
+        .navbar-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .dropdown-menu {
+            position: absolute;
+            width: 100%;
+             .with-arrow{
+                display: none;
+            }
+        }
+    }
+}
+
+// 
+// Landspace
+// 
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+	.mailbox{
+        .message-center{
+            height: 110px !important;
+        }
+    } 
+}

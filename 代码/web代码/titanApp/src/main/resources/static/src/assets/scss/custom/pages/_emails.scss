@@ -1,0 +1,55 @@
+// 
+// Email App
+// 
+.email-app {  
+    .list-group {
+        .list-group-item {
+            background: transparent;
+            .list-group-item-action {
+                padding: 12px 15px;
+                color: $body-color;
+                &:hover,
+                &.active {
+                    background: rgba(0, 0, 0, 0.03);
+                }
+            }
+        }
+    }
+    .email-table {
+        table-layout: fixed;
+        .selected {
+            background: #fff8e1;
+        }
+        .chb {
+            width: 50px;
+        }
+        .time {
+            width: 100px;
+        }
+        .starred,
+        .clip {
+            width: 25px;
+        }
+        .user-image {
+            width: 45px;
+        }
+        .user-name {
+            width: 130px;
+            .m-b-0 {
+                font-weight: $font-weight-light;
+            }
+        }
+        .unread {
+            .m-b-0,
+            .max-texts {
+                font-weight: $font-weight-medium;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .email-table {
+        min-width: 500px;
+    }
+}

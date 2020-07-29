@@ -1,0 +1,54 @@
+// 
+// Topbar Mailbox
+// 
+$mailbox-width:300px;
+$mailbox-height:317px;
+
+/*******************
+/*User mail widgets*/
+/*******************/
+.mailbox .chat-scroll{
+    height:calc(100vh - 100px) !important;
+}
+
+.mailbox {
+    .message-center {
+        height:$mailbox-height;
+        overflow: auto;
+        .message-item {
+            display: flex;
+            &:hover,
+            &.active {
+                background: $gray-100;
+            }
+            .message-title{
+                color:$gray-900;
+            }
+            .user-img {
+                width: 40px;
+                .profile-status {
+                    border: 2px solid $white;
+                    height: 10px;
+                    left: 30px;
+                    position: absolute;
+                    top: 1px;
+                    width: 10px;
+                }
+                .online {
+                    background: $success;
+                }
+                .busy {
+                    background: $danger;
+                }
+                .away {
+                    background: $warning;
+                }
+                .offline {
+                    background: $warning;
+                }
+            }
+        }
+    }
+}
+
+

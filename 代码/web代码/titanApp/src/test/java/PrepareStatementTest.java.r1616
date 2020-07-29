@@ -1,0 +1,39 @@
+import edu.neu.titan.titanApp.common.utils.DateUtils;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Random;
+
+public class PrepareStatementTest {
+    public static void main(String[] args) throws SQLException {
+        Connection connection = JDBCUtil.getConnection();
+
+        String sql = "insert into base_user_active_day(active_date, channel_id, version_id, active_num) values (?, ?, ?, ?)";
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+        String start = "2020-06-22";
+        String end = "2020-06-30";
+        String[] dates = DateUtils.getDays(start, end);
+
+        Random random = new Random();
+
+        for (String date : dates) {
+            for(int version_id = 1; version_id <= 11; version_id++) {
+                for(int channel_id = 1; channel_id <= 3; channel_id++) {
+
+                    preparedStatement.setObject(1, date);
+                    preparedStatement.setObject(2, channel_id);
+                    preparedStatement.setObject(3, version_id);
+                    preparedStatement.setObject(4, random.nextInt(1000));
+                    preparedStatement.addBatch();   //批处理，减少IO次数，速度更快
+                }
+            }
+
+            preparedStatement.executeBatch();
+            preparedStatement.clearBatch();
+        }
+
+        JDBCUtil.closeConnection(connection, preparedStatement);
+    }
+}

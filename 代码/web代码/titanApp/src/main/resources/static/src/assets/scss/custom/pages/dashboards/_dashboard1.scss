@@ -1,0 +1,114 @@
+// 
+// Chart 1
+// 
+.amp-pxl {
+    position: relative;
+
+    .ct-series-a .ct-bar {
+        stroke: $info;
+
+    }
+
+    .ct-series-b .ct-bar {
+        stroke: $success;
+
+    }
+}
+
+// 
+// Chart 2
+// 
+.campaign {
+    height: 266px;
+    position: relative;
+    .ct-series-a .ct-area {
+        fill-opacity: 0.2;
+        fill: url(#gradient);
+    }
+
+    .ct-series-a .ct-line,
+    .ct-series-a .ct-point {
+        stroke: $success;
+        stroke-width: 2px;
+    }
+
+    .ct-series-b .ct-area {
+        fill: $info;
+        fill-opacity: 0.1;
+
+    }
+
+    .ct-series-b .ct-line,
+    .ct-series-b .ct-point {
+        stroke: $info;
+        stroke-width: 2px;
+    }
+
+    .ct-series-a .ct-point,
+    .ct-series-b .ct-point {
+        stroke-width: 6px;
+    }
+}
+
+// 
+// New Messages
+// 
+.add-ct-btn {
+    right: 4px;
+    top: -46px;
+}
+
+// 
+// Profile Card
+// 
+.little-profile {
+    .pro-img {
+        margin-top: -80px;
+        margin-bottom: 20px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+  .profile-bg-height {
+    max-height: 187px;
+  }
+
+  .blog-img-height {
+    max-height: 238px;
+  }
+}
+
+.profile-card .profile-img {
+    max-height: 401px;
+}
+
+// 
+// Blog widgets 
+// 
+.blog-widget{
+    margin-top: 30px;
+    .blog-image img{
+        border-radius: 4px;
+        margin-top: -45px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0,0.2);
+    }
+}
+
+// 
+// project of the month [common]
+// 
+.stylish-table {
+    tbody tr {
+        border-left: 4px solid transparent;
+        &:hover,
+        &.active {
+            border-left: 4px solid $info;
+        }
+    }
+    tbody td {
+        small {
+            line-height: 12px;
+        }
+    }
+}

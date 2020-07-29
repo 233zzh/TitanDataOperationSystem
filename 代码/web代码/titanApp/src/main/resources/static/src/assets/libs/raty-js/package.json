@@ -1,0 +1,95 @@
+{
+  "_from": "raty-js@^2.8.0",
+  "_id": "raty-js@2.9.0",
+  "_inBundle": false,
+  "_integrity": "sha512-sh4w6Zebi3JGmhdc6KEPVXZVkgE75j3F/0aA/CV6uq4I06AS82y8p6Kpiwh1cnmZiWbjeARv/4XQKpio68X8RA==",
+  "_location": "/raty-js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "raty-js@^2.8.0",
+    "name": "raty-js",
+    "escapedName": "raty-js",
+    "rawSpec": "^2.8.0",
+    "saveSpec": null,
+    "fetchSpec": "^2.8.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/raty-js/-/raty-js-2.9.0.tgz",
+  "_shasum": "63076c3e17d6d9824d3998fe0a5d4625022db6fb",
+  "_spec": "raty-js@^2.8.0",
+  "_where": "E:\\bitbucket\\bootstrap\\elite-bt4\\dark",
+  "author": {
+    "name": "Washington Botelho"
+  },
+  "bugs": {
+    "url": "https://github.com/wbotelhos/raty/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Washington Botelho",
+      "email": "wbotelhos@gmail.com",
+      "url": "http://wbotelhos.com"
+    }
+  ],
+  "demos": [
+    "demo/index.html"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "deprecated": false,
+  "description": "jQuery Raty - A Star Rating Plugin",
+  "devDependencies": {
+    "jasmine-core": "^2.99.1",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-jasmine": "^1.1.2",
+    "karma-opera-launcher": "^1.0.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-safari-launcher": "^1.0.0"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "spec"
+  },
+  "homepage": "https://github.com/wbotelhos/raty",
+  "keywords": [
+    "classificacao",
+    "classificar",
+    "javascript",
+    "jquery",
+    "library",
+    "plugin",
+    "rating",
+    "raty",
+    "star",
+    "staring",
+    "votar",
+    "voto"
+  ],
+  "license": "MIT",
+  "main": "lib/jquery.raty.js",
+  "maintainers": [
+    {
+      "name": "Washington Botelho",
+      "email": "wbotelhos@gmail.com",
+      "url": "http://wbotelhos.com"
+    }
+  ],
+  "name": "raty-js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wbotelhos/raty.git"
+  },
+  "scripts": {
+    "test": "node_modules/karma/bin/karma start karma.conf.js"
+  },
+  "version": "2.9.0"
+}

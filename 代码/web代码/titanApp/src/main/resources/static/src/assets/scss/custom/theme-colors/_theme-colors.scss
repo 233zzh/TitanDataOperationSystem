@@ -1,0 +1,209 @@
+// predefined bg color of navbar logo bg
+#main-wrapper .topbar .top-navbar .navbar-header{
+    background: $skin1;
+}
+
+// Theme colors
+#main-wrapper {
+
+    &[data-layout="vertical"],
+    &[data-layout="horizontal"] {
+
+        /*This is for the logo bg*/
+        .topbar .top-navbar .navbar-header {
+            &[data-logobg="skin1"] {
+                background: $skin1;
+            }
+
+            &[data-logobg="skin2"] {
+                background: $skin2;
+            }
+
+            &[data-logobg="skin3"] {
+                background: $skin3;
+            }
+
+            &[data-logobg="skin4"] {
+                background: $skin4;
+            }
+
+            &[data-logobg="skin5"] {
+                background: $skin5;
+
+            }
+
+            &[data-logobg="skin6"] {
+                background: $skin6;
+
+                .navbar-brand {
+                    .dark-logo {
+                        display: inline;
+                    }
+
+                    .light-logo {
+                        display: none;
+                    }
+                }
+
+                .nav-toggler,
+                .topbartoggler {
+                    color: $body-color;
+                }
+            }
+        }
+
+        .topbar .navbar-collapse,
+        .topbar {
+            &[data-navbarbg="skin1"] {
+                background: $skin1;
+            }
+
+            &[data-navbarbg="skin2"] {
+                background: $skin2;
+            }
+
+            &[data-navbarbg="skin3"] {
+                background: $skin3;
+            }
+
+            &[data-navbarbg="skin4"] {
+                background: $skin4;
+            }
+
+            &[data-navbarbg="skin5"] {
+                background: $skin5;
+            }
+
+            &[data-navbarbg="skin6"] {
+                background: $skin6;
+            }
+        }
+
+        /*This is for the sidebar bg*/
+        .left-sidebar {
+
+            &[data-sidebarbg="skin1"],
+            &[data-sidebarbg="skin1"] ul {
+                background: $skin1;
+                .sidebar-footer {
+                    background: $skin1;
+                }
+            }
+
+            &[data-sidebarbg="skin2"],
+            &[data-sidebarbg="skin2"] ul {
+                background: $skin2;
+                .sidebar-footer {
+                    background: $skin2;
+                }
+            }
+
+            &[data-sidebarbg="skin3"],
+            &[data-sidebarbg="skin3"] ul {
+                background: $skin3;
+                .sidebar-footer {
+                    background: $skin3;
+                }
+            }
+
+            &[data-sidebarbg="skin4"],
+            &[data-sidebarbg="skin4"] ul {
+                background: $skin4;
+                .sidebar-footer {
+                    background: $skin4;
+                }
+            }
+
+            &[data-sidebarbg="skin5"] {
+                background: $skin5;
+                .sidebar-footer {
+                    background: $skin5;
+                    border-top: 1px solid rgba(0, 0, 0, .1);
+                }
+                .sidebar-nav {
+                    ul {
+                        background: $skin5;
+
+                        .sidebar-item {
+
+                            &.selected>.sidebar-link {
+                                background-color: $success;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &[data-sidebarbg="skin6"] {
+                background: $skin6;
+                .sidebar-footer {
+                    background: $light;
+                    a{
+                        color: $body-color
+                    }  
+                } 
+                .sidebar-nav {
+                    >ul>.sidebar-item>.sidebar-link.active {
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                        background-color: $cyan;
+                        color: $white !important;
+                        opacity: 1;
+                        font-weight: 400;
+                        i {
+                            color: $white !important;
+                        }
+                        &:after {
+                            border-color: $white;
+                        }
+                    }
+                    ul {
+                        background: $skin6;
+                        .sidebar-item {
+                            .sidebar-link {
+                                color: $sidebar-text-dark;
+                                opacity: 1;
+                                i {
+                                    color: $sidebar-icons-dark;
+                                }
+                                &:hover {
+                                    color: $gray-800;
+                                    i {
+                                        color: $gray-800;
+                                    }
+                                }
+                                &.active {
+                                    color: $gray-900;
+                                }
+                            }
+                            &.selected>.sidebar-link {
+                                color: $white;
+                                background-color: $cyan;
+                                i {
+                                    color: $white;
+                                }
+                                &.has-arrow {
+                                    &::after {
+                                        border-color: $white;
+                                    }
+                                }
+                                &:hover {
+                                    i {
+                                        color: $white;
+                                    }
+                                }
+                            }
+                        }
+                        .nav-small-cap {
+                            color: $sidebar-icons-dark;
+                        }
+                    }
+                    .has-arrow {
+                        &::after {
+                            border-color: $sidebar-text-dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

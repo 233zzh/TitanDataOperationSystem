@@ -1,0 +1,68 @@
+{
+  "_args": [
+    [
+      "jquery.flot.tooltip@0.9.0",
+      "E:\\bitbucket\\bootstrap\\monster-getstarted\\monster"
+    ]
+  ],
+  "_from": "jquery.flot.tooltip@0.9.0",
+  "_id": "jquery.flot.tooltip@0.9.0",
+  "_inBundle": false,
+  "_integrity": "sha1-rha/lLJsLtmrTbFnu6Ut/bYVwd8=",
+  "_location": "/jquery.flot.tooltip",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "jquery.flot.tooltip@0.9.0",
+    "name": "jquery.flot.tooltip",
+    "escapedName": "jquery.flot.tooltip",
+    "rawSpec": "0.9.0",
+    "saveSpec": null,
+    "fetchSpec": "0.9.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery.flot.tooltip/-/jquery.flot.tooltip-0.9.0.tgz",
+  "_spec": "0.9.0",
+  "_where": "E:\\bitbucket\\bootstrap\\monster-getstarted\\monster",
+  "authors": [
+    "Krzysztof Urbas @krzysu [myviews.pl]",
+    "Evan Steinkerchner @Roundaround"
+  ],
+  "browser": "./js/jquery.flot.tooltip.js",
+  "bugs": {
+    "url": "https://github.com/krzysu/flot.tooltip/issues"
+  },
+  "dependencies": {},
+  "description": "easy-to-use tooltips for Flot charts",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "homepage": "https://github.com/krzysu/flot.tooltip#readme",
+  "keywords": [
+    "flot",
+    "tooltip"
+  ],
+  "license": "MIT",
+  "main": "./js/jquery.flot.tooltip.js",
+  "name": "jquery.flot.tooltip",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krzysu/flot.tooltip.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.9.0",
+  "website": "https://github.com/krzysu/flot.tooltip"
+}

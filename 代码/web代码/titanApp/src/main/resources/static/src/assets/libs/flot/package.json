@@ -1,0 +1,37 @@
+{
+  "_from": "flot@^0.8.0-alpha",
+  "_id": "flot@0.8.3",
+  "_inBundle": false,
+  "_integrity": "sha512-xg2otcTJDvS+ERK+my4wxG/ASq90QURXtoM4LhacCq0jQW2jbyjdttbRNqU2cPykrpMvJ6b2uSp6SAgYAzj9tQ==",
+  "_location": "/flot",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "flot@^0.8.0-alpha",
+    "name": "flot",
+    "escapedName": "flot",
+    "rawSpec": "^0.8.0-alpha",
+    "saveSpec": null,
+    "fetchSpec": "^0.8.0-alpha"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/flot/-/flot-0.8.3.tgz",
+  "_shasum": "6d9b93c7aa2cfb30dfa1af9c1ec4c94070b1217f",
+  "_spec": "flot@^0.8.0-alpha",
+  "_where": "E:\\bitbucket\\bootstrap\\elite-bt4\\dark",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "## About ##",
+  "devDependencies": {
+    "jshint": "0.9.1"
+  },
+  "main": "jquery.flot.js",
+  "name": "flot",
+  "scripts": {
+    "test": "make test"
+  },
+  "version": "0.8.3"
+}

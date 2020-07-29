@@ -1,0 +1,137 @@
+/*******************/
+/*Chat widget*/
+/*******************/
+.chat-box{
+    overflow: auto;
+}
+/*******************/
+/*Chat widget*/
+/*******************/
+
+.chat-list {
+    li {
+        list-style: none;
+        .chat-img {
+            width: 45px;
+            img {
+                width: 45px;
+            }
+        }
+        .chat-content {
+            width: calc(100% - 140px);
+        }
+        .chat-time {
+            width: 80px;
+            font-size: 13px;
+        }
+        &.odd {
+            .chat-content {
+                width: calc(100% - 90px);
+            }
+            .box {
+                clear: both;
+            }
+        }
+        &.odd + .odd {
+            margin-top: 0px;
+        }
+        &.reverse {
+            text-align: right;
+            .chat-time {
+                text-align: left;
+            }
+            .chat-content {
+                padding-left: 0px;
+                padding-right: 15px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .chat-list {
+        li {
+            .chat-content {
+                width: calc(100% - 80px);
+            }
+        }
+    }
+}
+
+
+
+/*******************/
+/*Chat widget*/
+/*******************/
+
+.message-box {
+    .message-widget {
+        a {
+            &:hover {
+                background: $light;
+            }
+            .user-img {
+                width: 45px;
+                .profile-status {
+                    border: 2px solid $white;
+                    height: 10px;
+                    left: 33px;
+                    position: absolute;
+                    top: -1px;
+                    width: 10px;
+                }
+                .online {
+                    background: $success;
+                }
+                .busy {
+                    background: $danger;
+                }
+                .away {
+                    background: $warning;
+                }
+                .offline {
+                    background: $warning;
+                }
+            }
+            .mail-desc,
+            .time {
+                color: $body-color;
+            }
+        }
+    }
+}
+
+.right-part.chat-container,
+.right-part.invoice-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .chat-box-inner-part {
+        width: 100%;
+    }
+}
+
+.left-part.user-chat-box,
+.left-part.list-of-user {
+    height: 100vh;
+}
+
+.chatting-box,
+.invoiceing-box {
+    display: none;
+}
+/*******************/
+/*Chat widget*/
+/*******************/
+
+.chat-box {
+    .chat {
+        display: none;
+        &.active-chat {
+            display: block;
+        }
+    }
+}
+
+
+

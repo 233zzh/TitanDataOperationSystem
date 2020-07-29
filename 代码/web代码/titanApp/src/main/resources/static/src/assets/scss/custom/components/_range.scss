@@ -1,0 +1,16 @@
+// 
+// Custom Range
+// 
+.custom-range,
+[type=search],
+button.close{
+	-webkit-appearance:none;
+}
+.custom-range{
+	&::-webkit-slider-thumb {
+		-webkit-appearance:none;
+	}
+	&::-moz-range-thumb{
+		-moz-appearance:none;
+	}
+}

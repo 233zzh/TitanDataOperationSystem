@@ -1,0 +1,42 @@
+// ######################################
+// Error Pages
+// ######################################
+.error-box {
+    @extend %height_width_100;
+    position: fixed;
+    background: url(.../../../../src/assets/images/background/error-bg.jpg) no-repeat bottom center $white;
+    .error-body {
+        padding-top: 5%;
+    }
+    .error-title {
+        @extend %font_210;
+    }
+}
+
+// ######################################
+// Authentication Pages
+// ######################################
+.auth-wrapper{
+    position: relative;
+    min-height: 100vh;
+    .auth-box{
+        box-shadow: $shadow;
+        margin: 10% 0;
+        max-width: 400px;
+        width: 90%;
+
+        // ######################################
+        // with Sidebar
+        // ######################################
+        &.on-sidebar{
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+        }
+    }
+    
+    #recoverform{
+        display: none;
+    }
+}

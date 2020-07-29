@@ -1,0 +1,46 @@
+{
+  "_args": [
+    [
+      "wnumb@1.1.0",
+      "E:\\bitbucket\\bootstrap\\monster-getstarted\\monster"
+    ]
+  ],
+  "_from": "wnumb@1.1.0",
+  "_id": "wnumb@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-/Oy4gFCGm984Tay/1hIyWYDJPdw=",
+  "_location": "/wnumb",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "wnumb@1.1.0",
+    "name": "wnumb",
+    "escapedName": "wnumb",
+    "rawSpec": "1.1.0",
+    "saveSpec": null,
+    "fetchSpec": "1.1.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/wnumb/-/wnumb-1.1.0.tgz",
+  "_spec": "1.1.0",
+  "_where": "E:\\bitbucket\\bootstrap\\monster-getstarted\\monster",
+  "author": {
+    "name": "leongersen"
+  },
+  "bugs": {
+    "url": "https://github.com/leongersen/wnumb/issues"
+  },
+  "description": "wNumb - JavaScript Number & Money formatting",
+  "homepage": "https://github.com/leongersen/wnumb#readme",
+  "license": "WTFPL",
+  "main": "wNumb.js",
+  "name": "wnumb",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leongersen/wnumb.git"
+  },
+  "version": "1.1.0"
+}

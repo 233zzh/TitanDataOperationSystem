@@ -1,0 +1,60 @@
+{
+  "_args": [
+    [
+      "jquery-sparkline@2.4.0",
+      "E:\\bitbucket\\bootstrap\\monster-getstarted\\monster"
+    ]
+  ],
+  "_from": "jquery-sparkline@2.4.0",
+  "_id": "jquery-sparkline@2.4.0",
+  "_inBundle": false,
+  "_integrity": "sha1-G+i3twTdOFcVJwiu+x1KSzpp+zM=",
+  "_location": "/jquery-sparkline",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "jquery-sparkline@2.4.0",
+    "name": "jquery-sparkline",
+    "escapedName": "jquery-sparkline",
+    "rawSpec": "2.4.0",
+    "saveSpec": null,
+    "fetchSpec": "2.4.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery-sparkline/-/jquery-sparkline-2.4.0.tgz",
+  "_spec": "2.4.0",
+  "_where": "E:\\bitbucket\\bootstrap\\monster-getstarted\\monster",
+  "author": {
+    "name": "gwatts"
+  },
+  "bugs": {
+    "url": "https://github.com/gwatts/jquery.sparkline/issues"
+  },
+  "description": "jQuery Sparklines",
+  "devDependencies": {
+    "shelljs": "~0.6",
+    "uglify-js": "~2.6"
+  },
+  "homepage": "http://omnipotent.net/jquery.sparkline",
+  "license": "BSD-2-Clause",
+  "main": "jquery.sparkline.js",
+  "maintainers": [
+    {
+      "name": "imsky",
+      "email": "hello@imsky.co"
+    }
+  ],
+  "name": "jquery-sparkline",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imsky/jquery.sparkline.git"
+  },
+  "scripts": {
+    "build": "node build",
+    "postbuild": "uglifyjs jquery.sparkline.js > jquery.sparkline.min.js"
+  },
+  "version": "2.4.0"
+}

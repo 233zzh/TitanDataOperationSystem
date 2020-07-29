@@ -1,0 +1,527 @@
+// Theme Color Dark
+
+body[data-theme="dark"] {
+
+    /* Card Color */
+
+    $card-bg2: #272b34;
+
+    /* Settings for the  element */
+
+    $main-body-bg-dark: $gray-900!default;
+    $body-bg-dark: #323743;
+    $body-color-dark: #b2b9bf !default;
+    $border-color2: $gray-700 !default;
+    $background-alt: #272c33 !default;
+
+    $bg-dark-info: #213b5f;
+    $bg-dark-success: #1d3c3b;
+    $bg-dark-primary: #212d5f;
+    $bg-dark-inverse: #020510;
+
+    /* Body bg and color */
+
+    color: $body-color-dark;
+    background: $main-body-bg-dark;
+
+    /* scafholdings scss override */
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        color: $body-color-dark;
+    }
+
+    a.link {
+        color: $gray-200;
+        &:hover,
+        &:focus {
+            color: $themecolor;
+        }
+    }
+
+    .bg-white {
+        background-color: $black!important;
+    }
+
+    .bg-dark {
+        background-color: $gray-600!important;
+    }
+
+    .bg-light-info {
+        background-color: $bg-dark-info !important;
+    }
+
+    .bg-light-success {
+        background-color: $bg-dark-success !important;
+    }
+
+    .bg-light-primary {
+        background-color: $bg-dark-primary !important;
+    }
+
+    .bg-light-inverse {
+        background-color: $bg-dark-inverse !important;
+    }
+
+    .text-dark {
+        color: $gray-200!important;
+    }
+
+    .badge-light {
+        background-color: $gray-800;
+        color: $body-color-dark;
+    }
+
+    .btn-light {
+        background-color: $gray-800;
+        border-color: $gray-800;
+        color: $body-color-dark;
+    }
+
+    .custom-control-label::before {
+        background-color: $gray-600;
+    }
+
+    .floating-labels label {
+        color: $gray-200!important;
+    } 
+
+    /* Background colors */
+
+    .card,
+    .custom-select,
+    .form-control,
+    .nav-tabs .nav-link.active,
+    .nav-tabs .nav-item.show .nav-link,
+    .list-group-item,
+    .custom-file-label,
+    .modal-content,
+    .page-link,
+    .page-item.disabled .page-link,
+    .note-editor.note-frame .note-editing-area .note-editable,
+    .note-editor.note-frame .note-statusbar,
+    .lobilists .lobilist,
+    .jsgrid-header-row>.jsgrid-header-cell,
+    .jsgrid-row>.jsgrid-cell,
+    .css-bar:after,
+    .select2-container--default .select2-selection--single,
+    .select2-container--default .select2-selection--multiple,
+    .select2-container--classic .select2-selection--single,
+    .dtp>.dtp-content{
+        background-color: $card-bg2;
+    }
+
+    .mailbox .message-center .message-item.active, .mailbox .message-center .message-item:hover {
+        background: $body-bg-dark;
+    }
+
+    .jvectormap-container {
+        background-color: $card-bg2 !important;
+    }
+
+    .dropzone,
+    .mailbox .message-center .message-item:hover,
+    .dropdown-item:hover,
+    .dropdown-item:focus,
+    .picker__button--today,
+    .picker__button--clear,
+    .picker__button--close,
+    .footer {
+        background: $card-bg2;
+    }
+
+    .footer {
+        border-top: 1px solid $border-color2;
+    }
+
+    .right-part.mail-list,
+    .right-part.mail-details,
+    .right-part.mail-compose,
+    .left-part,
+    .card-footer,
+    .typeahead.form-control,
+    .select2-dropdown {
+        background-color: $card-bg2!important;
+    }
+
+    .page-titles {
+        background: $body-bg-dark;
+    }
+
+    .jumbotron,
+    .page-wrapper,
+    .progress,
+    .breadcrumb,
+    .dropdown-menu,
+    #main-wrapper,
+    .wizard:not(.wizard-circle) > .steps .disabled a, 
+    .wizard:not(.wizard-circle) > .steps .disabled a:hover, 
+    .wizard:not(.wizard-circle) > .steps .disabled a:active,
+    .wizard:not(.wizard-circle) > .content,
+    .wizard:not(.wizard-circle) > .actions .disabled a, 
+    .wizard:not(.wizard-circle) > .actions .disabled a:hover, 
+    .wizard:not(.wizard-circle) > .actions .disabled a:active,
+    .wizard-content .wizard>.steps .step,
+    .cke_toolbar_separator {
+        background-color: $body-bg-dark;
+    }
+
+    // Calendar
+    .fc td, .fc th {
+        background: $body-bg-dark !important;
+        border-color: $card-bg2 !important;
+    }
+
+    .fc-state-default {
+        text-shadow: none;
+    }
+
+    .fc-unthemed td.fc-today,
+    .fc-toolbar .fc-button.fc-state-active,
+    .picker__list-item,
+    .picker__box,
+    .picker--time .picker__box,
+    .daterangepicker,
+    .daterangepicker .calendar-table {
+        background: $dark;
+    }
+
+    .fc-unthemed .fc-divider,
+    .fc-unthemed .fc-list-heading td,
+    .fc-unthemed .fc-popover .fc-header {
+        background: $body-color-dark;
+    }
+
+    .daterangepicker td.off,
+    .daterangepicker td.off.in-range,
+    .daterangepicker td.off.start-date,
+    .daterangepicker td.off.end-date {
+        background: $black;
+    }
+
+    .timeline:before {
+        background-color: $gray-800;
+    }
+    
+    .cd-horizontal-timeline .events {
+        background: $gray-800;
+    }
+
+    .noUi-target,
+    .noUi-tooltip,
+    .bootstrap-switch .bootstrap-switch-label,
+    .striped-rows .row:nth-child(odd),
+    .dp-off,
+    .footable-odd,
+    .jsgrid-alt-row>.jsgrid-cell,
+    .jsgrid-filter-row>.jsgrid-cell,
+    .cd-horizontal-timeline .events a::after,
+    .css-bar>i,
+    div.mce-edit-area,
+    .mce-menu-item.mce-disabled,
+    .mce-menu-item.mce-disabled:hover,
+    .cke_top,
+    .message-box .message-widget a:hover,
+    .feeds .feed-item:hover,
+    .f-icon:hover,
+    .t-icon:hover,
+    .w-icon:hover,
+    .sl-icon:hover,
+    .if-icon:hover,
+    .m-icon:hover {
+        background: $main-body-bg-dark!important;
+    }
+
+    /* Background Alt colors */
+
+    .customizer,
+    .chat-list .chat-item .chat-content .box.bg-light-info,
+    pre[class*="language-"],
+    .bg-light,
+    .input-group-text,
+    .custom-file-label::after,
+    .table .thead-light th,
+    .table-hover tbody tr:hover,
+    .myadmin-dd .dd-list .dd-item .dd-handle,
+    .myadmin-dd-empty .dd-list .dd3-content,
+    .myadmin-dd-empty .dd-list .dd3-handle,
+    .mce-panel {
+        background-color: $background-alt!important;
+    }
+
+    // .timeline>.timeline-item>.timeline-panel:after {
+    //     border-right:  $border-color2;
+    //     border-left: $border-color2;
+    // }
+
+    // .timeline>.timeline-item>.timeline-panel:before {
+    //     border-right: 0 solid $main-body-bg-dark;
+    //     border-left: 8px solid $main-body-bg-dark;
+    // }
+
+    .mce-menubar .mce-menubtn:hover,
+    .mce-menubar .mce-menubtn.mce-active,
+    .mce-menubar .mce-menubtn:focus {
+        background: $dark;
+        border-color: $border-color2;
+    }
+
+    .mce-btn {
+        background: $dark;
+        text-shadow: none;
+        button {
+            color: $body-color-dark;
+        }
+    }
+
+    /* Font colors */
+
+    .page-wrapper,
+    .form-control,
+    .custom-select,
+    .chat-list .chat-item .chat-content .box.bg-light-info,
+    .nav-tabs .nav-link.active,
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link:hover,
+    .nav-tabs .nav-link:focus,
+    .breadcrumb-item.active,
+    .input-group-text,
+    .custom-file-label::after,
+    .table .thead-light th,
+    .note-editor.note-frame .note-editing-area .note-editable,
+    .lobilists .btn-link,
+    .dropdown-menu,
+    ul.list-style-none li a,
+    .dropdown-item,
+    .mce-menubar .mce-menubtn button span,
+    .mce-ico,
+    .noUi-tooltip,
+    .picker,
+    .select2-container--classic .select2-selection--single,
+    .select2-container--default .select2-selection--multiple,
+    .select2-container--default .select2-selection--single,
+    .select2-container--default .select2-selection--single .select2-selection__arrow,
+    .select2-container--default .select2-selection--single .select2-selection__rendered,
+    .dtp table.dtp-picker-days tr>td>a,
+    .dtp .dtp-picker-time>a,
+    .cke_reset_all, 
+    .cke_reset_all *, 
+    .cke_reset_all a, 
+    .cke_reset_all textarea,
+    .table,
+    .message-box .message-widget a .mail-contnet .mail-desc, 
+    .message-box .message-widget a .mail-contnet .time {
+        color: $body-color-dark;
+    }
+
+    .mailbox .message-center .message-item .message-title,
+    .lobilists .lobilist-item-title {
+        color: $white;
+    }
+
+    // email selected
+    .email-app .email-table .selected {
+        background: #213b5f;
+    }
+
+    // Grid page
+    .grid-structure .grid-container {
+        background-color: $body-bg-dark;
+    }
+
+
+    /* Border Colors */
+    .customtab li a.nav-link.active, .profile-tab li a.nav-link.active {
+        color: $info !important;
+        border-bottom: 2px solid $info !important;
+    }
+
+    .border-bottom,
+    .border-top,
+    .border-left,
+    .border-right,
+    .border,
+    .dropdown-menu,
+    .form-control,
+    .custom-select,
+    .table th,
+    .table td,
+    .modal-header,
+    .modal-footer,
+    blockquote,
+    pre[class*="language-"],
+    .card-group .card,
+    .nav-tabs .nav-link.active,
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs,
+    .nav-tabs .nav-link:hover,
+    .nav-tabs .nav-link:focus,
+    .list-group-item,
+    .custom-file-label,
+    .input-group-text,
+    .custom-file-label::after,
+    .left-part,
+    .page-link,
+    .profiletimeline,
+    .note-editor.note-frame,
+    .dropzone,
+    .note-editor.note-frame .note-statusbar,
+    .mailbox .message-center .message-item,
+    .lobilists .lobilist,
+    .lobilists .lobilist-item,
+    .lobilists .lobilist-item .drag-handler,
+    .lobilists .lobilist-footer,
+    .lobilists .lobilist-form-footer,
+    .bootstrap-switch,
+    .r-separator .form-group,
+    .b-form .row,
+    .datepaginator-sm .pagination li a,
+    .datepaginator-lg .pagination li a,
+    .datepaginator .pagination li a,
+    .ql-toolbar.ql-snow,
+    .ql-container.ql-snow,
+    .jsgrid-edit-row>.jsgrid-cell,
+    .jsgrid-filter-row>.jsgrid-cell,
+    .jsgrid-grid-body,
+    .jsgrid-grid-header,
+    .jsgrid-header-row>.jsgrid-header-cell,
+    .jsgrid-insert-row>.jsgrid-cell,
+    .jsgrid-pager-page a,
+    .jsgrid-pager-current-page,
+    .jsgrid-pager-nav-button a,
+    .timeline>.timeline-item>.timeline-panel,
+    .cd-horizontal-timeline .events a::after,
+    .cd-timeline-navigation a,
+    .mailbox .nav-link,
+    .dropdown-divider,
+    .e-campaign .c-cost,
+    .table-bordered,
+    .table-bordered td,
+    .table-bordered th,
+    .mce-panel,
+    .mce-menubar,
+    .mce-btn-group:not(:first-child),
+    .mce-btn:hover,
+    .mce-btn:active,
+    .mce-splitbtn:hover .mce-open,
+    .noUi-tooltip,
+    .picker__list-item,
+    .picker__button--today,
+    .picker__button--clear,
+    .picker__button--close,
+    .daterangepicker,
+    .daterangepicker .calendar-table,
+    .daterangepicker .drp-buttons,
+    .select2-container--default .select2-selection--single,
+    .select2-container--default .select2-selection--multiple,
+    .select2-container--classic .select2-selection--single,
+    .select2-dropdown,
+    .cke_chrome,
+    .cke_toolgroup a.cke_button:last-child:after, 
+    .cke_toolgroup a.cke_button.cke_button_disabled:hover:last-child:after,
+    .wizard-content .wizard.wizard-circle>.steps .step,
+    table.footable, table.footable-details,
+    .fixed-table-container {
+        border-color: $border-color2!important;
+    }
+
+    .wizard-content .wizard>.steps>ul>li.current {
+        .step {
+            border-color: $themecolor!important;
+            background-color: $black;
+        }
+        >a {
+            color: $white;
+        }
+    }
+
+    .wizard-content {
+        .wizard.wizard-circle>.steps>ul>li.current:after,
+        .wizard.wizard-circle>.steps>ul>li.current~li:after,
+        .wizard.wizard-circle>.steps>ul>li.current~li:before {
+            background-color: $border-color2;
+        }
+        .wizard.vertical>.steps>ul>li.current:after, 
+        .wizard.vertical>.steps>ul>li.current:before, 
+        .wizard.vertical>.steps>ul>li.current~li:after, 
+        .wizard.vertical>.steps>ul>li.current~li:before, 
+        .wizard.vertical>.steps>ul>li:after, 
+        .wizard.vertical>.steps>ul>li:before {
+            background-color: transparent;
+        }
+    }
+
+    .was-validated .form-control:valid,
+    .form-control.is-valid,
+    .was-validated .custom-select:valid,
+    .custom-select.is-valid {
+        border-color: $success!important;
+    }
+    .was-validated .form-control:invalid,
+    .form-control.is-invalid,
+    .was-validated .custom-select:invalid,
+    .custom-select.is-invalid {
+        border-color: $danger!important;
+    }
+    .ct-label {
+        fill: $body-color-dark;
+        color: $body-color-dark;
+    }
+    .ct-grid {
+        stroke: $background-alt;
+    }
+
+    // On Table tr hover color
+    .table-hover tbody tr:hover {
+        color: $body-color-dark;
+    }
+
+    // Custom checkbox
+    // .checkbox label::before {
+    //     background-color: $body-bg-dark;
+    //     border: 1px solid $card-bg2;
+    // }
+
+    // 
+    // Form Material
+    // 
+    .form-material .form-control, .form-material .form-control.focus, .form-material .form-control:focus {
+        background-image: linear-gradient($info, $info),linear-gradient($border-color2, $border-color2);
+    }
+
+    // Widget recent comment
+    .message-box .message-widget a {
+        border-bottom: 1px solid $border-color2;
+    }
+
+    // Timeline widget change border
+    .steamline {
+        border-left: 1px solid $border-color2;
+        .sl-item {
+            border-bottom: 1px solid $border-color2;
+        }
+    }
+
+    // 
+    // Form material
+    // 
+    .has-success .form-control {
+        border-color: $success !important;
+    }
+    .has-warning .form-control {
+      border-color: $warning  !important;
+    }
+    .has-danger .form-control {
+      border-color: $danger !important;
+    }
+
+    // 
+    // Footable pagination
+    // 
+    .footable .pagination li a {
+        border-color: $body-bg-dark;
+        background-color: $body-bg-dark;
+    }
+    .footable .pagination li.active a {
+        border-color: $info;
+        background-color: $info;
+    }
+}

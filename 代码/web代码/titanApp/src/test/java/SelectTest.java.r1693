@@ -1,0 +1,66 @@
+import com.mysql.cj.jdbc.MysqlDataSource;
+import edu.neu.titan.titanApp.common.beans.Condition;
+import edu.neu.titan.titanApp.common.beans.RetentionActivityData;
+import edu.neu.titan.titanApp.common.sql.SQLResultBuilder;
+import edu.neu.titan.titanApp.dao.sql.RetentionTemplate;
+import edu.neu.titan.titanApp.dao.sql.UserAnalyseTemplate;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+
+import java.util.List;
+
+/**
+ * Created by IntelliJ IDEA.
+ *
+ * @Author: Zhao Lei
+ * @Email: 1176066749@qq.com
+ * @Date: 2020/6/18
+ * @Time: 14:29
+ * @Version: 1.0
+ * @Description: 测试能否把查出来的小数转成Integer
+ */
+public class SelectTest {
+
+    private NamedParameterJdbcTemplate template;
+
+    public void test() {
+        MysqlDataSource dataSource = new MysqlDataSource();
+        dataSource.setURL("jdbc:mysql://localhost:3306/TiTan?serverTimezone=UTC");
+        dataSource.setUser("root");
+        dataSource.setPassword("12345678");
+
+        NamedParameterJdbcTemplate template = new NamedParameterJdbcTemplate(dataSource);
+
+
+
+        List<RetentionActivityData> list = SQLResultBuilder.newInstance(RetentionActivityData.class)
+                .sql_select(RetentionTemplate.QUERY_ACTIVITY_RETENTION)
+                .condition(Condition.instance("2020-06-11", "2020-06-20"))
+                .build()
+                .getResult(template);
+
+        System.out.println(list.toString());
+//
+//        System.out.println(list);
+
+//        Condition condition = new Condition();
+//        condition.setStart_date("2020-06-15");
+//        condition.setEnd_date("2020-06-16");
+//        condition.setVersion_id(1);
+//        condition.setChannel_id(1);
+//
+//        SQLResultBuilder.newInstance(RetentionDataDay.class)
+//                .sql_select(RetentionTemplate.QUERY_INCREASE_RETENTION_DAY)
+//                .sql_group(RetentionTemplate.GROUP_BY_CLAUSE)
+//                .condition(condition)
+//                .build()
+//                .getResult(template);
+//
+//        JdbcTemplate template1 = new JdbcTemplate();
+
+    }
+
+    public static void main(String[] args) {
+        SelectTest selectTest = new SelectTest();
+        selectTest.test();
+    }
+}

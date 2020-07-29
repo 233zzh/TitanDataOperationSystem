@@ -1,0 +1,377 @@
+// 
+// Form label
+// 
+form label {
+    font-weight: $font-weight-normal;
+    margin-bottom: 0;
+}
+
+// #########################################
+// Form custom  validation
+// #########################################
+.error {
+    .form-control {
+        border-color: $danger;
+    }
+    .help-block {
+        color: $danger;
+    }
+}
+
+.validate {
+    .form-control {
+        border-color: $success;
+    }
+    .help-block {
+        color: $success;
+    }
+}
+
+// #########################################
+// Form date picker
+// #########################################
+@media (min-height: 33.875em) {
+    .picker--opened .picker__frame {
+        position: absolute;
+        top: 30%;
+        bottom: auto;
+    }
+}
+
+.dtp>.dtp-content>.dtp-date-view>header.dtp-header,
+.dtp div.dtp-date,
+.dtp div.dtp-time,
+.dtp table.dtp-picker-days tr>td>a.selected {
+    background: $info;
+}
+
+.dtp .p10>a {
+    color: $white;
+}
+
+.datepicker .day,
+.datepicker .dow {
+	padding: 5px 10px;
+}
+
+// #########################################
+// Form Image Cropper 
+// #########################################
+.docs-buttons .btn,
+.docs-data .input-group {
+    margin-bottom: 5px;
+}
+
+// #########################################
+// Default perfect scrollbar use this class
+// #########################################
+.scrollable {
+    position: relative;
+}
+
+// 
+// Form material inputs
+// 
+.form-material {
+    .form-group{ 
+        overflow:hidden;
+    }
+    .form-control {
+        background-color: rgba(0, 0, 0, 0);
+        // background-position: center bottom, center calc(100% - 1px);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 0 2px, 100% 1px;
+        padding: 0;
+        transition: background 0s ease-out 0s;
+        height: calc(2.25rem + 2px);
+        // border-bottom: 1px solid $border-color !important;
+    }
+    & .form-control, 
+    & .form-control.focus, 
+    & .form-control:focus {
+        background-image: linear-gradient($info, $info), linear-gradient($input-border-color, $input-border-color);
+        border: 0 none;
+        border-radius: 0;
+        box-shadow: none !important;
+        float: none;
+        background-position: bottom;
+    }
+    & .form-control.focus, 
+    & .form-control:focus {
+        background-size: 100% 2px, 100% 1px;
+        outline: 0 none;
+        transition-duration: 0.3s;
+    }
+} 
+
+.form-control-line {
+    .form-group{ 
+        overflow:hidden;
+    }
+    .form-control {
+        border:0px;
+        border-radius:0px;
+        padding-left: 0px;
+        border-bottom: 1px solid $input-border-color;
+        &:focus{
+            border-bottom: 1px solid $info;
+        }
+    }
+} 
+
+.btn-file {
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    > input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        font-size: 23px;
+        height: 100%;
+        width: 100%;
+        direction: ltr;
+        cursor: pointer;
+        border-radius: 0px;
+    }
+}
+
+.fileinput {
+    .input-group-addon {
+        border-right: 1px solid $border-color;
+    }
+}
+
+.fileinput .form-control {
+    padding-top: 7px;
+    padding-bottom: 5px;
+    display: inline-block;
+    margin-bottom: 0px;
+    vertical-align: middle;
+    cursor: text;
+}
+
+.fileinput .thumbnail {
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.fileinput .thumbnail > img {
+    max-height: 100%;
+}
+
+.fileinput .btn {
+    vertical-align: middle;
+}
+
+.fileinput-exists .fileinput-new,
+.fileinput-new .fileinput-exists {
+    display: none;
+}
+
+.fileinput-inline .fileinput-controls {
+    display: inline;
+}
+
+.fileinput-filename {
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.form-control .fileinput-filename {
+    vertical-align: bottom;
+}
+
+.fileinput.input-group > * {
+    position: relative;
+    z-index: 2;
+}
+
+.fileinput.input-group > .btn-file {
+    z-index: 1;
+}
+
+// 
+// Input Material form state
+// 
+
+.form-control-danger, .form-control-success, .form-control-warning {
+  padding-right: 2.25rem;
+    background-repeat: no-repeat;
+    background-position: center right .5625rem;
+    -webkit-background-size: 1.125rem 1.125rem;
+    background-size: 1.125rem 1.125rem;
+}
+
+.has-success .col-form-label, .has-success .custom-control, .has-success .form-check-label, .has-success .form-control-feedback, .has-success .form-control-label {
+  color: $success;
+}
+
+.has-success .form-control-success {
+  background-image: url(../../src/assets/images/icon/success.svg);
+}
+
+.has-success .form-control {
+  border-color: $success;
+}
+
+.has-warning .col-form-label, .has-warning .custom-control, .has-warning .form-check-label, .has-warning .form-control-feedback, .has-warning .form-control-label {
+  color: $warning;
+}
+
+.has-warning .form-control-warning {
+  background-image: url(../../src/assets/images/icon/warning.svg);
+}
+
+.has-warning .form-control {
+  border-color: $warning;
+}
+
+.has-danger .col-form-label, .has-danger .custom-control, .has-danger .form-check-label, .has-danger .form-control-feedback, .has-danger .form-control-label {
+  color: $danger;
+}
+
+.has-danger .form-control-danger {
+  background-image: url(../../src/assets/images/icon/danger.svg);
+}
+
+.has-danger .form-control {
+  border-color: $danger;
+}
+
+// 
+// Floating Input Page
+// 
+.floating-labels .form-control {
+    box-shadow: none;
+}
+
+.floating-labels .form-group {
+    position: relative;
+}
+
+.floating-labels .form-control {
+    
+    padding: 10px 10px 10px 0;
+    display: block;
+    border: none;
+    font-family: $font-family-sans-serif;
+    border-radius: 0px;
+    border-bottom: 1px solid $input-border-color;
+     &:focus {
+       
+        box-shadow:none;
+    }
+}
+
+.floating-labels select.form-control>option {
+    font-size: 14px;
+}
+
+.floating-labels .has-error .form-control {
+    border-bottom: 1px solid $danger !important;
+}
+
+.floating-labels .has-warning .form-control {
+    border-bottom: 1px solid $warning !important;
+}
+
+.floating-labels .has-success .form-control {
+    border-bottom: 1px solid $success !important;
+}
+
+.floating-labels .form-control:focus {
+    outline: none;
+    border: none;
+}
+
+.floating-labels label {
+    color: $body-color;
+    
+    position: absolute;
+    cursor: auto;
+    top: 5px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.floating-labels .focused label {
+    top: -20px;
+    font-size: 12px;
+    color: $dark;
+}
+
+.floating-labels .bar {
+    position: relative;
+    display: block;
+}
+
+.floating-labels .bar:before,
+.floating-labels .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: $themecolor;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.floating-labels .bar:before {
+    left: 50%;
+}
+
+.floating-labels .bar:after {
+    right: 50%;
+}
+
+.floating-labels .form-control:focus~.bar:before,
+.floating-labels .form-control:focus~.bar:after {
+    width: 50%;
+}
+
+.floating-labels .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.floating-labels .input-lg~label,
+.floating-labels .input-lg {
+    font-size: 24px;
+}
+
+.floating-labels .input-sm~label,
+.floating-labels .input-sm {
+    font-size: 16px;
+}
+
+.has-warning .bar:before,
+.has-warning .bar:after {
+    background: $warning;
+}
+
+.has-success .bar:before,
+.has-success .bar:after {
+    background: $success;
+}
+
+.has-error .bar:before,
+.has-error .bar:after {
+    background: $danger;
+}

@@ -1,0 +1,133 @@
+// stylelint-disable declaration-no-important
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+		$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+		.float#{$infix}-left  { float: right !important; }
+		.float#{$infix}-right { float: left !important; }
+		.float#{$infix}-none  { float: none !important; }
+	}
+}
+
+// Margin and Padding for rtl version
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+		@include media-breakpoint-up($breakpoint) {
+				$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+				@each $prop, $abbrev in (margin: m, padding: p) {
+						@each $size, $length in $spacers {
+								.#{$abbrev}r#{$infix}-#{$size} {
+										#{$prop}-left: $length !important;
+										#{$prop}-right: 0 !important;
+								}
+								
+								.#{$abbrev}l#{$infix}-#{$size} {
+										#{$prop}-right: $length !important;
+										#{$prop}-left: 0 !important;
+								}
+						}
+				}
+
+				.mr#{$infix}-auto {
+						margin-left: auto !important;
+						margin-right: 0 !important;
+				}
+
+				.ml#{$infix}-auto{
+						margin-right: auto !important;
+						margin-left: 0 !important;
+				}
+		}
+}
+
+// Responsive alignment
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+		$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+		.text#{$infix}-left   { text-align: right !important; }
+		.text#{$infix}-right  { text-align: left !important; }
+		.text#{$infix}-center { text-align: center !important; }
+	}
+}
+
+// 
+// Border
+// 
+.border-left    { 
+		border-right: $border-width solid $border-color !important; 
+		border-left: 0 !important; 
+}
+.border-right   { 
+		border-left: $border-width solid $border-color !important; 
+		border-right: 0 !important; 
+}
+
+.border-right-0  { border-left: 0 !important; }
+.border-left-0   { border-right: 0 !important; }
+
+//
+// Border-radius
+//
+.rounded-right {
+	border-top-left-radius: $border-radius !important;
+	border-bottom-left-radius: $border-radius !important;
+}
+
+.rounded-left {
+	border-top-right-radius: $border-radius !important;
+	border-bottom-right-radius: $border-radius !important;
+}
+
+// 
+// Form input Group
+// 
+.input-group {
+		> .form-control,
+		> .custom-select {
+				&:not(:last-child) { @include border-left-radius(0); }
+				&:not(:first-child) { @include border-right-radius(0); }
+		}
+
+		// Custom file inputs have more complex markup, thus requiring different
+	// border-radius overrides.
+	> .custom-file {
+		display: flex;
+		align-items: center;
+
+		&:not(:last-child) .custom-file-label,
+		&:not(:last-child) .custom-file-label::after { @include border-left-radius(0); }
+		&:not(:first-child) .custom-file-label { @include border-right-radius(0); }
+	}
+}
+
+.input-group > .input-group-prepend > .btn,
+.input-group > .input-group-prepend > .input-group-text,
+.input-group > .input-group-append:not(:last-child) > .btn,
+.input-group > .input-group-append:not(:last-child) > .input-group-text,
+.input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group > .input-group-append:last-child > .input-group-text:not(:last-child)  {
+	@include border-right-radius(0.25rem);
+	@include border-left-radius(0);
+}
+
+ .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
+ .input-group > .input-group-prepend:not(:first-child) > .btn {
+		 @include border-right-radius(0);
+ }
+
+ .input-group .form-control:not(:first-child),
+ .input-group .form-control:not(:last-child){
+		 border-radius: 0 !important;
+ }
+
+.input-group > .input-group-append > .btn,
+.input-group > .input-group-append > .input-group-text,
+.input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+.input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
+	@include border-left-radius(0.25rem);
+	@include border-right-radius(0);
+}

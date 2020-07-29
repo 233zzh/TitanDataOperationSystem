@@ -1,0 +1,4 @@
+#向 dws_apl_dau_rec 表中导入数据
+type=command
+dependencies=dws_flw_agg_u
+command=spark-submit --master yarn --deploy-mode cluster --class cn.edu.neu.titan.titanSpark.analysis.apl.function.DauRecFunction /BigData/jars/titanSpark-1.0-SNAPSHOT.jar

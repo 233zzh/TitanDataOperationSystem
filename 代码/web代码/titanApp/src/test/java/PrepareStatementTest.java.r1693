@@ -1,0 +1,55 @@
+import edu.neu.titan.titanApp.common.utils.DateUtils;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Random;
+
+public class PrepareStatementTest {
+    public static void main(String[] args) throws SQLException {
+        Connection connection = JDBCUtil.getConnection();
+
+//        String ps = "湖北,广东,浙江,湖南,河南,安徽,重庆,山东,江西,四川,江苏,北京,福建,上海,广西,河北,陕西,云南,海南,黑龙江,辽宁" +
+//                ",山西,天津,甘肃,内蒙古,新疆,宁夏,吉林,贵州,青海,西藏,澳门,香港,台湾,南沙诸岛";
+//        String[] split = ps.split(",");
+//
+//        System.out.println(split.length);
+        
+
+        String sql = "insert into base_terminal_region_province values (?, ?, ?, ?, ?, ?, ?)";
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+        String start = "2020-05-20";
+        String end = "2020-06-30";
+        String[] dates = DateUtils.getDays(start, end);
+        int base = 0;
+//
+        Random random = new Random();
+//
+        for (String date : dates) {
+            for(int version_id = 1; version_id <= 11; version_id++) {
+                for(int channel_id = 1; channel_id <= 3; channel_id++) {
+                    for (int catalog = 1; catalog <= 31; catalog++) {
+//
+                    preparedStatement.setObject(1, date);
+                    preparedStatement.setObject(2, channel_id);
+                    preparedStatement.setObject(3, version_id);
+                    preparedStatement.setObject(4, catalog);
+                    preparedStatement.setObject(5, random.nextInt(50+base));
+                    preparedStatement.setObject(6, random.nextInt(50+base));
+                    preparedStatement.setObject(7, random.nextInt(50+base));
+////                    for (int i = 2; i <= 9; i++) {
+//                        preparedStatement.setObject(1, catalog);
+//                        preparedStatement.setObject(2, split[catalog-1]);
+////                    }
+                    preparedStatement.addBatch();   //批处理，减少IO次数，速度更快
+                    }
+                }
+            }
+            preparedStatement.executeBatch();
+            preparedStatement.clearBatch();
+        }
+
+        JDBCUtil.closeConnection(connection, preparedStatement);
+    }
+}

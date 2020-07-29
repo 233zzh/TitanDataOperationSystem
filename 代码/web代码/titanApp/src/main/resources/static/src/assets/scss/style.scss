@@ -1,0 +1,90 @@
+// (Required file)
+@import 'bootstrap/functions';
+
+@import 'config/variables';
+@import 'config/skins';
+@import 'config/custom-variables';
+
+// Import Bootstrap source files (Required file)
+@import 'bootstrap/bootstrap';  
+
+// Extensions
+@import 'custom/extensions/extensions';
+
+// Mixins
+@import 'custom/mixins/mixins';
+
+// Structure
+@import 'custom/structure/layout';
+@import 'custom/structure/preloader';
+@import 'custom/structure/navbar';
+@import 'custom/structure/sidebar';
+@import 'custom/structure/customizer';
+
+// Settings
+@import 'custom/structure/horizontal/horizontal';
+@import 'custom/structure/rtl/rtl';
+@import 'custom/structure/rtl/horizontal-rtl';
+
+// Theme Colors
+@import 'custom/theme-colors/dark-theme';
+@import 'custom/theme-colors/theme-colors';
+
+// Components
+@import 'custom/components/breadcrumb';
+@import 'custom/components/buttons';
+@import 'custom/components/card';
+@import 'custom/components/modal';
+@import 'custom/components/nav';
+@import 'custom/components/range';
+@import 'custom/components/reboot';
+@import 'custom/components/progress';
+
+// Pages
+@import 'custom/pages/dashboards/dashboard1';
+@import 'custom/pages/dashboards/dashboard3';
+@import 'custom/pages/dashboards/dashboard4';
+@import 'custom/pages/dashboards/dashboard5';
+@import 'custom/pages/dashboards/dashboard6';
+@import 'custom/pages/authentication';
+@import 'custom/pages/emails';
+@import 'custom/pages/form-pages';
+@import 'custom/pages/gallery-cards';
+@import 'custom/pages/google-vector';
+@import 'custom/pages/inner-pages';
+@import 'custom/pages/nestable';
+@import 'custom/pages/taskboard';
+@import 'custom/pages/timeline';
+@import 'custom/pages/typeahead';
+
+
+// Plugins
+@import 'custom/plugins/animation';
+@import 'custom/plugins/calendar';
+@import 'custom/plugins/charts';
+@import 'custom/plugins/forms';
+@import 'custom/plugins/icons';
+@import 'custom/plugins/perfect-scrollbar';
+@import 'custom/plugins/tables';
+
+
+// Widgets
+@import 'custom/widgets/chat-popup';
+@import 'custom/widgets/chat-widgets';
+@import 'custom/widgets/comments';
+@import 'custom/widgets/custom-check-radio-switch';
+@import 'custom/widgets/feeds';
+@import 'custom/widgets/profile';
+@import 'custom/widgets/steamline';
+@import 'custom/widgets/task';
+@import 'custom/widgets/topbar-mail';
+
+//This is for the icons (Required file)
+@import 'icons/font-awesome/css/fontawesome-all.css';
+@import 'icons/simple-line-icons/css/simple-line-icons.css';
+@import 'icons/weather-icons/css/weather-icons.min.css';
+@import 'icons/themify-icons/themify-icons.css';
+@import 'icons/flag-icon-css/flag-icon.min.css';
+@import "icons/material-design-iconic-font/css/materialdesignicons.min.css";
+@import "icons/crypto-icons/cryptocoins.css";  
+

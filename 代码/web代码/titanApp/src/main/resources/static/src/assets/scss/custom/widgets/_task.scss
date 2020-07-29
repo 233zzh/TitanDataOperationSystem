@@ -1,0 +1,206 @@
+/*******************/
+/*To do widgets*/
+/*******************/
+
+.todo-list {
+    li {
+        .assignedto {
+            li {
+                margin-right: 2px;
+                img {
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
+
+.list-task .task-done span {
+    text-decoration: line-through;
+}
+
+.todo-listing {
+    .todo-item {
+        .inner-item.done-todo {
+            label,
+            .todo-subtext,
+            .todo-time {
+                text-decoration: line-through;
+            }
+        }
+        .todo-action-dropdown.dropdown-toggle::after {
+            display: none;
+        }
+        &.current-task-done {
+            .todo-header,
+            .todo-subtext,
+            .todo-time {
+                text-decoration: line-through; 
+            }
+        }
+    }
+
+    .todo-item.all-todo-list {
+        .todo-action-dropdown {
+            .dropdown-item {
+                &.permanent-delete,
+                &.revive {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .todo-item.current-todo-delete {
+        display: none;
+        .todo-action-dropdown {
+            .dropdown-item {
+                &.permanent-delete,
+                &.revive {
+                    display: block;
+                }
+                &.edit,
+                &.remove,
+                &.important {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// 
+// Notes
+// 
+.note-has-grid {
+    .nav-link {
+        padding: 0.5rem;
+    }
+    .single-note-item {
+        border-radius: 10px;
+        .favourite-note {
+            cursor: pointer;
+        }
+        .side-stick {
+            position: absolute;
+            width: 3px;
+            height: 35px;
+            left: 0;
+            background-color: rgba($gray-700, 0.5);
+        }
+        .category-dropdown.dropdown-toggle:after {
+            display: none;
+        }
+        .category {
+            [class*="category-"] {
+                height: 15px;
+                width: 15px;
+                display: none;
+                &::after {
+                    content: "\F143";
+                    font: normal normal normal 24px/1 "Material Design Icons";
+                    font-size: 12px;
+                    color: $white;
+                    position: absolute;
+                }
+            }
+            .category-business {
+                background-color: rgba($success, 0.5);
+                border: 2px solid $success;
+            }
+            .category-social {
+                background-color: rgba($info, 0.5);
+                border: 2px solid $info;
+            }
+            .category-important {
+                background-color: rgba($danger, 0.5);
+                border: 2px solid $danger;
+            }
+        }
+    }
+
+    .single-note-item.all-category {
+        .point {
+            color: rgba($gray-700, 0.5);
+        }
+    }
+
+    .single-note-item.note-business {
+        .point {
+            color: rgba($success, 0.5);
+        }
+        .side-stick {
+            background-color: rgba($success, 0.5);
+        }
+        .category {
+            .category-business {
+                display: inline-block;
+            }
+        }
+    }
+
+    .single-note-item.note-favourite {
+        .favourite-note {
+            color: $warning;
+        }
+    }
+
+    .single-note-item.note-social {
+        .point {
+            color: rgba($info, 0.5);
+        }
+        .side-stick {
+            background-color: rgba($info, 0.5);
+        }
+        .category {
+            .category-social {
+                display: inline-block;
+            }
+        }
+    }
+
+    .single-note-item.note-important {
+        .point {
+            color: rgba($danger, 0.5);
+        }
+        .side-stick {
+            background-color: rgba($danger, 0.5);
+        }
+        .category {
+            .category-important {
+                display: inline-block;
+            }
+        }
+    }
+
+    .single-note-item.all-category,
+    .single-note-item.all-category.note-favourite {
+        .more-options {
+            display: block;
+        }
+        &.note-important,
+        &.note-business,
+        &.note-social {
+            .more-options {
+                display: none;
+            }
+        }
+    }
+}
+
+// Responsive
+@include media-breakpoint-down(sm) {
+    .note-has-grid {
+        .single-note-item {
+            max-width: 100%;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .note-has-grid {
+        .single-note-item {
+            max-width: 301px;
+        }
+    }
+}

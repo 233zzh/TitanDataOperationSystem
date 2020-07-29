@@ -1,0 +1,14 @@
+// 
+// Profile Card
+// 
+.social-profile {
+    text-align: center;
+    background: rgba(7, 10, 43, 0.8);
+}
+
+@include media-breakpoint-down(sm) {
+    .social-profile-first {
+        padding-top: 15% !important;
+        max-height: 193px;
+    }
+}

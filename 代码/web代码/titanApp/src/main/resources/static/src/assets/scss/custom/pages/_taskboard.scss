@@ -1,0 +1,103 @@
+// 
+// Taskboard
+// 
+.lobilists {
+    .lobilist {
+        box-shadow: none;
+    }
+    .lobilist.lobilist-primary {
+        border-color: $border-color;
+        .lobilist-header,
+        .lobilist-footer,
+        .lobilist-form-footer {
+            border-color: $primary;
+            background-color: $primary;
+        }
+    }
+    .lobilist.lobilist-danger {
+        border-color: $border-color;
+        .lobilist-header,
+        .lobilist-footer,
+        .lobilist-form-footer {
+            border-color: $danger;
+            background-color: $danger;
+        }
+    }
+    .lobilist.lobilist-info {
+        border-color: $border-color;
+        .lobilist-header,
+        .lobilist-footer,
+        .lobilist-form-footer {
+            border-color: $info;
+            background-color: $info;
+        }
+    }
+    .lobilist.lobilist-success {
+        border-color: $border-color;
+        .lobilist-header,
+        .lobilist-footer {
+            border-color: $success;
+            background-color: $success;
+        }
+    }
+    .lobilist-footer,
+    .lobilist-form-footer {
+        border-color: $border-color!important;
+        background: rgba(0, 0, 0, 0.02)!important;
+    }
+
+    .btn-link {
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        color: $dark !important;
+    }
+}
+
+.lobilists.single-line {
+    height: 500px;
+}
+
+.lobilist,
+.lobilists {
+    position: relative;
+}
+
+.lobilists [type="checkbox"]:not(:checked),
+.lobilists [type="checkbox"]:checked {
+    opacity: 1;
+    position: relative;
+}
+
+.lobilists .lobilist-item {
+    margin-bottom: 16px;
+    padding-top: 5px;
+}
+
+.lobilists .lobilist-item-title {
+    color: $dark;
+}
+
+.lobilists .lobilist-item-description {
+    font-style: normal;
+    font-size: 13px;
+}
+
+.lobilists .lobilist-check {
+    top: 10px;
+}
+
+.lobilists .lobilist-item-duedate {
+    position: relative;
+    font-size: 12px;
+    left: 0px;
+}
+
+.lobilists .lobilist-actions {
+    top: 0px;
+}
+
+.lobilist-actions .btn i {
+    font-size: 15px;
+    vertical-align: middle;
+}

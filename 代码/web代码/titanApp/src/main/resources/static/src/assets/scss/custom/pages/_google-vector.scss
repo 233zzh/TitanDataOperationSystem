@@ -1,0 +1,57 @@
+// 
+// Google Map
+// 
+.gmaps, .gmaps-panaroma {
+  height: 300px;
+}
+
+.gmaps, .gmaps-panaroma {
+  height: 300px; 
+  background: $gray-200;
+  border-radius: $border-radius;
+}
+
+.gmaps-overlay {
+  display: block;
+  background: $info;
+  border-radius: 4px;
+  text-align: center;
+  color: $white;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 10px 20px;
+}
+
+.gmaps-overlay_arrow {
+  left: 50%,;
+  margin-left: -16px;
+  width: 0;
+  height: 0;
+}
+
+.gmaps-overlay_arrow.above {
+  bottom: -15px;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 16px solid $info;
+}
+
+.gmaps-overlay_arrow.below {
+  top: -15px;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 16px solid $info;
+}
+
+// 
+// Vector Map
+// 
+.jvectormap-zoomin, .jvectormap-zoomout {
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+}
+
+.jvectormap-zoomout {
+  top: 40px;
+}
