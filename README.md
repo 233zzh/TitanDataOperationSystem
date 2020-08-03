@@ -18,10 +18,10 @@
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200729215307388.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
 
 ## 数仓分层设计和spark定时任务
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200729215316621.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200803182637561.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
 
 ## spark任务之间的依赖关系
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200729215321850.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200803182631263.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
 
 ## azkaban定时任务调度
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200729220558234.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
