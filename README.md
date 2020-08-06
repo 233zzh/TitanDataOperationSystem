@@ -27,3 +27,63 @@
 
 ## azkaban定时任务调度
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200803183015924.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
+
+
+
+## web界面展示
+## 一、概况模块
+### 整体趋势页面
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200806115616128.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200806115624225.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
+
+
+
+## 二、用户分析模块
+### 新增用户页面
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2020080611570646.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
+
+### 活跃用户页面
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200806115844910.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
+
+### 启动次数页面
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200806115900534.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
+
+### 版本分布页面
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200806115911835.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
+
+## 三、留存分析模块
+### 留存用户页面
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200806120059222.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
+
+### 用户新鲜度页面
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2020080612010477.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
+
+### 用户活跃度页面
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200806120108378.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
+
+## 四、渠道分析模块
+### 渠道列表页面
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200806120113769.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
+
+## 五、用户参与度模块
+### 使用时长页面
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200806120117999.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
+
+### 使用频率页面
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200806120122263.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
+
+### 访问页面
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200806120127841.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
+
+### 访问间隔
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200806120131596.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
+
+## 六、终端属性模块
+### 设备终端页面
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200806120135926.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
+
+### 网络页面
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2020080612014042.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
+
+### 地域页面
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200806120144155.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
