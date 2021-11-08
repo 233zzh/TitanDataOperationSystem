@@ -10,7 +10,7 @@
 
 **2. 我们的网站部署到阿里云的学生机，所以会很慢，请耐心等待，谢谢**
 
-博客地址：https://zihao.blog.csdn.net/category_10041667.html
+博客地址：https://blog.csdn.net/dreamingzihao/category_11293317.html
 
 ## 功能模块划分
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020072921524085.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzEyNDI3OQ==,size_16,color_FFFFFF,t_70)
